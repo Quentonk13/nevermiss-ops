@@ -1,0 +1,100 @@
+{
+  "skill_name": "ceo-bot",
+  "version": "1.0.0",
+  "triggers": {
+    "nightly_review": {
+      "type": "cron",
+      "cron": "0 22 * * *",
+      "timezone": "America/Los_Angeles"
+    },
+    "morning_brief": {
+      "type": "cron",
+      "cron": "30 6 * * *",
+      "timezone": "America/Los_Angeles"
+    },
+    "weekly_strategic": {
+      "type": "cron",
+      "cron": "0 19 * * 0",
+      "timezone": "America/Los_Angeles"
+    },
+    "critical_event": {
+      "type": "event",
+      "events": ["budget_overrun", "system_failure", "security_alert", "bounce_spike"]
+    }
+  },
+  "llm": {
+    "strategic": {
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-20250514",
+      "api_key_env": "ANTHROPIC_API_KEY",
+      "timeout_seconds": 120,
+      "max_retries": 2,
+      "temperature": 0.3,
+      "weekly_budget_cap_usd": 30.0
+    },
+    "aggregation": {
+      "provider": "groq",
+      "model": "llama-3.1-70b-versatile",
+      "api_key_env": "GROQ_API_KEY",
+      "timeout_seconds": 30,
+      "max_retries": 2,
+      "temperature": 0.2
+    }
+  },
+  "targets": {
+    "reply_rate_pct": 3.0,
+    "qualified_rate_of_replies_pct": 40.0,
+    "booking_rate_of_qualified_pct": 40.0,
+    "close_rate_of_demos_pct": 25.0
+  },
+  "improvement_system": {
+    "enabled": true,
+    "auto_pause_after_consecutive_negative_days": 3,
+    "paused": false
+  },
+  "authority": {
+    "can_trigger_skills": true,
+    "can_modify_configs": true,
+    "config_modification_guardrails": {
+      "max_send_volume_change_pct": 20,
+      "max_budget_increase_pct": 0,
+      "blocked_fields": ["pricing", "api_keys", "security"]
+    },
+    "can_reallocate_resources": true,
+    "can_delete_data": false,
+    "can_communicate_externally": false,
+    "can_override_security": false,
+    "can_change_pricing": false,
+    "can_make_financial_commitments": false,
+    "can_post_publicly": false
+  },
+  "managed_skills": [
+    "browser-agent",
+    "competitive-edge",
+    "crm-engine",
+    "email-optimizer",
+    "lead-pipeline",
+    "market-intel",
+    "marketing-optimizer",
+    "outreach-sequencer",
+    "performance-engine",
+    "qa-guard",
+    "reply-handler",
+    "sales-closer",
+    "sales-optimizer"
+  ],
+  "data_paths": {
+    "knowledge_graph": "data/ceo_memory/knowledge/",
+    "daily_notes": "data/ceo_memory/daily_notes/",
+    "tacit_knowledge": "data/ceo_memory/tacit/",
+    "improvements_log": "data/ceo_memory/improvements_log.jsonl",
+    "delegations_log": "data/ceo_memory/delegations_log.jsonl",
+    "strategic_reviews": "data/ceo_memory/strategic_reviews/",
+    "morning_briefs": "data/ceo_memory/morning_briefs/",
+    "system_log": "data/system_log.jsonl"
+  },
+  "logging": {
+    "log_file": "data/system_log.jsonl",
+    "log_level": "INFO"
+  }
+}

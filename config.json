@@ -1,0 +1,75 @@
+{
+  "owner_email": "Gonevermiss@gmail.com",
+  "owner_notification_channel": "telegram",
+  "calendly_link": "",
+  "signup_link": "",
+  "product": {
+    "name": "NeverMiss",
+    "price": 297,
+    "founding_member_cap": 20,
+    "never_say": ["AI", "artificial intelligence", "bot", "automated", "automation"],
+    "always_say": ["system", "tool"]
+  },
+  "llm": {
+    "bulk": {
+      "provider": "openrouter",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "api_key_env": "OPENROUTER_API_KEY"
+    },
+    "closer": {
+      "provider": "openrouter",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "api_key_env": "OPENROUTER_API_KEY",
+      "daily_budget_cap_usd": 0
+    }
+  },
+  "sending": {
+    "max_emails_per_inbox_day": 50,
+    "send_window_start": "08:00",
+    "send_window_end": "17:00",
+    "min_lead_score": 3,
+    "max_follow_ups": 3,
+    "follow_up_intervals_days": [3, 4, 5],
+    "warmup_schedule": {
+      "week_1": 5,
+      "week_2": 10,
+      "week_3": 20,
+      "week_4": 35,
+      "week_5_plus": 50
+    },
+    "max_bounce_rate_pause": 0.05,
+    "max_bounce_rate_warn": 0.03
+  },
+  "escalation": {
+    "max_conversation_turns": 5,
+    "stale_lead_days": 14,
+    "max_retries_on_failure": 2,
+    "notify_on": [
+      "hot_lead",
+      "booking",
+      "deal_closed",
+      "system_failure",
+      "inbox_bounce_alert",
+      "weekly_report",
+      "variant_underperformance"
+    ]
+  },
+  "target_geos": [
+    {"state": "CA", "cities": ["San Diego", "Los Angeles", "Riverside", "Orange County"]},
+    {"state": "AZ", "cities": ["Phoenix", "Tucson"]},
+    {"state": "TX", "cities": ["Dallas", "Houston", "San Antonio", "Austin"]},
+    {"state": "GA", "cities": ["Atlanta"]},
+    {"state": "FL", "cities": ["Tampa", "Orlando", "Miami", "Jacksonville"]},
+    {"state": "NC", "cities": ["Charlotte", "Raleigh"]}
+  ],
+  "competitors_domains_suppressed": [
+    "servicetitan.com",
+    "housecallpro.com",
+    "jobber.com",
+    "podium.com",
+    "smith.ai",
+    "ruby.com",
+    "numa.com",
+    "hatch.co"
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "competitor": "DIY / Do Nothing",
+  "last_updated": null,
+  "overview": "The most common 'competitor' is not a product -- it's the business owner deciding to handle it themselves or simply let calls go to voicemail. This is the status quo objection. The key is making the cost of inaction tangible and emotionally resonant without being pushy.",
+  "weaknesses": [
+    {
+      "id": "diy_w1",
+      "category": "cost",
+      "weakness": "Every missed call costs $500-$3,000 in lost revenue",
+      "severity": "critical",
+      "exploitable": true,
+      "talk_track": "What's the average ticket for a job you do? $500? $1,500? $3,000? Every missed call that goes to voicemail is a potential job that called your competitor instead. Even if you only miss 2-3 calls a month, that's $1,000-$9,000 in lost revenue. NeverMiss is $297.",
+      "evidence": "Industry data on average home services ticket sizes; speed-to-lead research"
+    },
+    {
+      "id": "diy_w2",
+      "category": "speed",
+      "weakness": "78% of customers hire the first business that responds",
+      "severity": "critical",
+      "exploitable": true,
+      "talk_track": "Here's the stat that changes everything: 78% of homeowners hire the first company that responds to their inquiry. Not the cheapest. Not the best reviewed. The FIRST one to get back to them. If you're calling back the next morning, you've already lost to whoever responded at 10pm.",
+      "evidence": "Harvard Business Review speed-to-lead study; InsideSales research"
+    },
+    {
+      "id": "diy_w3",
+      "category": "time_decay",
+      "weakness": "Lead conversion drops 80% after 5 minutes",
+      "severity": "critical",
+      "exploitable": true,
+      "talk_track": "Research shows that if you respond within 5 minutes, you're 21x more likely to convert that lead. After 30 minutes? Basically dead. If you're on a job site, in the truck, or eating dinner, those leads are dying every minute you don't respond.",
+      "evidence": "Lead Response Management study; Drift/InsideSales data"
+    },
+    {
+      "id": "diy_w4",
+      "category": "burnout",
+      "weakness": "Owner burnout from being on-call 24/7",
+      "severity": "high",
+      "exploitable": true,
+      "talk_track": "You started this business for freedom, right? But right now you're answering the phone at dinner, checking voicemail at midnight, and stressing about every missed call on the weekend. For $297 a month -- less than one small job -- you get your evenings and weekends back.",
+      "evidence": "Universal small business owner pain point; consistently resonates in conversations"
+    },
+    {
+      "id": "diy_w5",
+      "category": "scalability",
+      "weakness": "Cannot personally scale call answering as business grows",
+      "severity": "medium",
+      "exploitable": true,
+      "talk_track": "You handling calls works when you're doing 5 jobs a month. But as you grow to 20, 50, 100 jobs? You physically cannot answer every call, manage crews, do estimates, AND run the business. Something has to give. Usually it's the calls -- and that's where the money comes from.",
+      "evidence": "Natural growth trajectory of home services businesses"
+    },
+    {
+      "id": "diy_w6",
+      "category": "after_hours",
+      "weakness": "Highest-value emergency calls come after hours",
+      "severity": "high",
+      "exploitable": true,
+      "talk_track": "When does a pipe burst? When does the AC die? When does the furnace stop? Always at the worst time -- 10pm, Sunday morning, Christmas Eve. Those emergency calls are your $2,000-$5,000 jobs. And right now they're going to voicemail.",
+      "evidence": "Emergency service call timing data; premium pricing for after-hours work"
+    }
+  ],
+  "our_advantages": [
+    {
+      "advantage": "Pays for itself with a single recovered lead per month",
+      "against_weakness": "diy_w1",
+      "proof_point": "$297 vs $500-$3,000 average job ticket"
+    },
+    {
+      "advantage": "Under 60 second response time, every time",
+      "against_weakness": "diy_w2",
+      "proof_point": "Be the first to respond, automatically, 24/7"
+    },
+    {
+      "advantage": "Eliminates the 5-minute conversion window problem",
+      "against_weakness": "diy_w3",
+      "proof_point": "Every missed call gets a text-back in under 60 seconds"
+    },
+    {
+      "advantage": "Owner gets their life back",
+      "against_weakness": "diy_w4",
+      "proof_point": "Stop checking the phone at dinner. NeverMiss handles it."
+    },
+    {
+      "advantage": "Scales with the business automatically",
+      "against_weakness": "diy_w5",
+      "proof_point": "Same quality and speed whether you get 10 leads or 1,000"
+    },
+    {
+      "advantage": "After-hours coverage at no extra cost",
+      "against_weakness": "diy_w6",
+      "proof_point": "Catches the $2,000+ emergency calls that come at midnight"
+    }
+  ],
+  "talk_tracks": {
+    "when_lead_says_i_handle_it_myself": "Respect that -- you clearly hustle. Quick question: how many calls did you miss last week while you were on a job? Even 2-3 missed calls a month at your average ticket size means you're losing more than $297. NeverMiss just makes sure no lead slips through while you're doing what you do best.",
+    "when_lead_says_too_expensive": "I hear you. $297 feels like a new expense. But let me flip it: what's one missed job cost you? $500? $1,500? You only need to catch ONE lead per month that would have gone to voicemail, and NeverMiss pays for itself. Everything after that is pure profit.",
+    "when_lead_says_voicemail_works": "Voicemail works for the patient customers. But the data says 78% of people hire the first business that responds. If your voicemail callback happens 4 hours later, they've already booked someone else. NeverMiss texts them back in under a minute -- before they even finish Googling your competitor.",
+    "when_lead_says_not_right_now": "Totally fair. But while you're thinking about it, the calls you miss this week are going to your competitors. Every week without coverage is money left on the table. When you're ready, it takes 10 minutes to set up and works immediately. No contracts, cancel anytime.",
+    "when_lead_says_i_dont_miss_calls": "That's great -- and rare. But humor me: check your phone's missed call log for the last 7 days. Even the most dedicated owner misses calls during jobs, meetings, dinner, and sleep. NeverMiss is the safety net for the ones that slip through."
+  },
+  "deploy_when": [
+    "Lead has no current answering solution",
+    "Lead says they handle calls personally",
+    "Lead mentions voicemail as their after-hours solution",
+    "Lead says any answering service is too expensive",
+    "Lead is a new business still handling everything solo",
+    "Lead mentions being overwhelmed or burned out",
+    "Lead mentions missing calls or slow response times",
+    "Default playbook when no specific competitor is identified"
+  ],
+  "counter_objections": {
+    "i_always_answer_my_phone": "Even in the shower? On a roof? While running a diagnostic? Nobody catches 100% of calls. NeverMiss is the net that catches the ones you physically can't get to.",
+    "my_customers_are_patient": "Some are. But research shows the majority hire the first responder. The patient ones might wait -- the big-ticket emergency callers won't.",
+    "297_is_a_lot_for_a_small_business": "It's less than your phone bill. Less than one oil change on your truck. And it only needs to catch one lead per month to pay for itself 2-5x over. It's not an expense, it's a revenue tool.",
+    "i_have_my_wife_answer_calls": "That works -- until she's busy, or sick, or asleep, or on vacation. And it's not scalable as you grow. NeverMiss is the always-on backup that makes sure nothing falls through, even when your team is occupied.",
+    "i_tried_something_like_this_before": "What did you try? Most services are either too expensive per call, only available during business hours, or send robotic responses. NeverMiss is flat rate, 24/7, and responds like a knowledgeable team member. Happy to show you the difference."
+  }
+}

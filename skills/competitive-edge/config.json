@@ -1,0 +1,135 @@
+{
+  "skill": "competitive-edge",
+  "version": "1.0.0",
+  "enabled": true,
+  "llm": {
+    "strategic": {
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-20250514",
+      "api_key_env": "ANTHROPIC_API_KEY",
+      "timeout_seconds": 30,
+      "max_retries": 2,
+      "temperature": 0.3,
+      "weekly_budget_usd": 15.00,
+      "cost_per_1k_input_tokens": 0.003,
+      "cost_per_1k_output_tokens": 0.015
+    },
+    "gathering": {
+      "provider": "groq",
+      "model": "llama-3.1-70b-versatile",
+      "api_key_env": "GROQ_API_KEY",
+      "timeout_seconds": 15,
+      "max_retries": 2,
+      "temperature": 0.1
+    }
+  },
+  "schedule": {
+    "weekly_day": "thursday",
+    "weekly_hour_pt": 5,
+    "weekly_minute_pt": 0,
+    "timezone": "America/Los_Angeles"
+  },
+  "competitors": {
+    "smith_ai": {
+      "name": "Smith.ai",
+      "domain": "smith.ai",
+      "pricing_url": "https://smith.ai/pricing",
+      "review_sources": [
+        "https://www.g2.com/products/smith-ai/reviews",
+        "https://www.capterra.com/p/175853/Smith-ai/reviews/",
+        "https://www.trustpilot.com/review/smith.ai"
+      ],
+      "playbook_file": "competitor_playbooks/smith_ai.json"
+    },
+    "ruby": {
+      "name": "Ruby",
+      "domain": "ruby.com",
+      "pricing_url": "https://www.ruby.com/pricing",
+      "review_sources": [
+        "https://www.g2.com/products/ruby-receptionists/reviews",
+        "https://www.capterra.com/p/136498/Ruby-Receptionists/reviews/",
+        "https://www.trustpilot.com/review/ruby.com"
+      ],
+      "playbook_file": "competitor_playbooks/ruby.json"
+    },
+    "hatch": {
+      "name": "Hatch",
+      "domain": "usehatch.com",
+      "pricing_url": "https://www.usehatch.com/pricing",
+      "review_sources": [
+        "https://www.g2.com/products/hatch/reviews",
+        "https://www.capterra.com/p/227687/Hatch/reviews/"
+      ],
+      "playbook_file": "competitor_playbooks/hatch.json"
+    },
+    "numa": {
+      "name": "Numa",
+      "domain": "numa.com",
+      "pricing_url": "https://www.numa.com/pricing",
+      "review_sources": [
+        "https://www.g2.com/products/numa/reviews",
+        "https://www.capterra.com/p/243185/Numa/reviews/"
+      ],
+      "playbook_file": "competitor_playbooks/numa.json"
+    }
+  },
+  "review_mining": {
+    "max_reviews_per_source": 50,
+    "min_review_age_days": 0,
+    "max_review_age_days": 180,
+    "sentiment_threshold_negative": 0.3
+  },
+  "pricing": {
+    "check_frequency_hours": 168,
+    "price_change_threshold_pct": 5,
+    "owner_notification_on_change": true
+  },
+  "feature_gaps": {
+    "monthly_report_day": 1,
+    "categories": ["quick_win", "medium_build", "strategic"]
+  },
+  "market_timing": {
+    "verticals": {
+      "hvac": {"peak_months": [3, 4, 5, 6, 7, 8], "off_months": [11, 12, 1, 2]},
+      "plumbing": {"peak_months": [9, 10, 11, 12, 1, 2], "off_months": [5, 6, 7]},
+      "electrical": {"peak_months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], "off_months": []},
+      "roofing": {"peak_months": [3, 4, 5, 9, 10, 11], "off_months": [12, 1, 2]},
+      "landscaping": {"peak_months": [3, 4, 5, 6, 7, 8, 9], "off_months": [12, 1, 2]}
+    },
+    "sourcing_multiplier_peak": 1.5,
+    "sourcing_multiplier_off": 0.7
+  },
+  "churn_prevention": {
+    "enabled": false,
+    "check_frequency_hours": 24,
+    "signals": {
+      "declining_response_rate_threshold": 0.5,
+      "competitor_mention_weight": 0.3,
+      "billing_complaint_weight": 0.25,
+      "usage_decline_pct": 30,
+      "days_inactive_warning": 7,
+      "days_inactive_critical": 14
+    },
+    "risk_score_notify_threshold": 0.7
+  },
+  "guardrails": {
+    "max_weekly_claude_spend_usd": 15.00,
+    "never_change_core_price": true,
+    "never_contact_competitors": true,
+    "feature_recs_suggestion_only": true,
+    "playbook_injection_additive_only": true
+  },
+  "data_paths": {
+    "base_dir": "data/competitive_edge",
+    "weakness_reports": "data/competitive_edge/weakness_reports",
+    "pricing_snapshots": "data/competitive_edge/pricing_snapshots",
+    "feature_gap_tracker": "data/competitive_edge/feature_gap_tracker.json",
+    "market_timing_data": "data/competitive_edge/market_timing.json",
+    "churn_signals": "data/competitive_edge/churn_signals.json",
+    "spend_tracker": "data/competitive_edge/spend_tracker.json"
+  },
+  "logging": {
+    "log_file": "data/system_log.jsonl",
+    "log_level": "INFO"
+  }
+}

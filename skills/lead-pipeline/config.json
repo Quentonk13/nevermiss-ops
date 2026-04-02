@@ -1,0 +1,96 @@
+{
+  "skill_name": "lead-pipeline",
+  "version": "1.0.0",
+  "trigger": {
+    "daily_sources": {
+      "cron": "0 6 * * *",
+      "timezone": "America/Los_Angeles",
+      "sources": ["apollo", "google_maps", "yelp"]
+    },
+    "facebook": {
+      "cron": "0 8,12,16,20 * * *",
+      "timezone": "America/Los_Angeles",
+      "sources": ["facebook"]
+    }
+  },
+  "llm": {
+    "provider": "groq",
+    "model": "llama-3.1-70b-versatile",
+    "api_key_env": "GROQ_API_KEY",
+    "max_tokens_per_call": 512,
+    "temperature": 0.0
+  },
+  "target_geos": {
+    "phase_1": [
+      {"state": "CA", "cities": ["San Diego", "Los Angeles", "Riverside", "Orange County"]}
+    ],
+    "phase_2": [
+      {"state": "AZ", "cities": ["Phoenix"]},
+      {"state": "TX", "cities": ["Dallas", "Houston"]},
+      {"state": "GA", "cities": ["Atlanta"]},
+      {"state": "FL", "cities": ["Tampa"]},
+      {"state": "NC", "cities": ["Charlotte"]}
+    ]
+  },
+  "verticals": {
+    "tier_1": ["HVAC", "plumbing", "electrical"],
+    "tier_2": ["roofing", "pest_control", "landscaping", "painting"],
+    "tier_3": ["general_contractor", "fencing", "concrete", "flooring", "remodeling"]
+  },
+  "scoring": {
+    "base_points": 1,
+    "tier_1_vertical_bonus": 1,
+    "small_company_bonus": 1,
+    "small_company_threshold_employees": 20,
+    "no_tech_bonus": 1,
+    "warm_intent_bonus": 1,
+    "high_review_threshold": 50,
+    "minimum_qualifying_score": 3,
+    "owner_roles": ["owner", "president", "founder", "co-founder", "ceo", "principal"]
+  },
+  "sources": {
+    "apollo": {
+      "api_key_env": "APOLLO_API_KEY",
+      "max_requests_per_run": 100,
+      "rate_limit_delay_seconds": 1.5,
+      "batch_size": 10,
+      "per_page": 10,
+      "person_seniorities": ["owner", "founder", "c_suite", "director", "manager"]
+    },
+    "google_maps": {
+      "max_results_per_query": 20,
+      "rate_limit_delay_seconds": 3.0,
+      "min_rating": 4.0,
+      "search_template": "{vertical} contractor {city} {state}"
+    },
+    "yelp": {
+      "api_key_env": "SERPAPI_KEY",
+      "max_results_per_query": 20,
+      "rate_limit_delay_seconds": 2.0,
+      "search_template": "{vertical} contractor {city} {state}"
+    },
+    "facebook": {
+      "api_key_env": "FACEBOOK_ACCESS_TOKEN",
+      "target_group_keywords": ["HVAC contractor", "plumber", "electrician", "general contractor"],
+      "post_lookback_hours": 4,
+      "intent_keywords": [
+        "missed call",
+        "missed calls",
+        "lost call",
+        "phone system",
+        "answering service",
+        "too busy",
+        "can't answer",
+        "voicemail",
+        "after hours",
+        "overflow",
+        "hiring receptionist",
+        "need help with phones",
+        "so many calls"
+      ]
+    }
+  },
+  "data": {
+    "log_path": "data/system_log.jsonl"
+  }
+}

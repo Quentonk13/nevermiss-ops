@@ -1,0 +1,81 @@
+{
+  "skill_name": "browser-agent",
+  "version": "1.0.0",
+  "trigger": {
+    "type": "on-demand+cron",
+    "cron": "0 6 * * *",
+    "timezone": "America/Los_Angeles"
+  },
+  "rate_limits": {
+    "max_visits_per_hour": 100,
+    "max_visits_per_day": 500,
+    "min_delay_between_requests_ms": 1500,
+    "max_concurrent_pages": 3
+  },
+  "cache": {
+    "competitor_ttl_hours": 24,
+    "static_ttl_hours": 168,
+    "review_ttl_hours": 48,
+    "audit_ttl_hours": 72,
+    "search_ttl_hours": 12,
+    "cache_dir": "data/browser_cache"
+  },
+  "browser": {
+    "headless": true,
+    "timeout_ms": 30000,
+    "navigation_timeout_ms": 45000,
+    "viewport_width": 1920,
+    "viewport_height": 1080,
+    "locale": "en-US",
+    "timezone_id": "America/Los_Angeles"
+  },
+  "screenshots": {
+    "base_dir": "data/browser_screenshots",
+    "full_page": true,
+    "format": "png",
+    "quality": 80
+  },
+  "data_paths": {
+    "screenshots": "data/browser_screenshots",
+    "cache": "data/browser_cache",
+    "audits": "data/website_audits",
+    "competitor_snapshots": "data/competitor_snapshots"
+  },
+  "competitors_to_monitor": [
+    "smith.ai",
+    "ruby.com",
+    "numa.com",
+    "hatch.co",
+    "podium.com",
+    "housecallpro.com",
+    "servicetitan.com",
+    "jobber.com"
+  ],
+  "search": {
+    "provider": "serpapi",
+    "api_key_env": "SERPAPI_API_KEY",
+    "default_num_results": 5,
+    "max_num_results": 20
+  },
+  "llm": {
+    "page_analysis": {
+      "provider": "groq",
+      "model": "llama-3.1-70b-versatile",
+      "api_key_env": "GROQ_API_KEY"
+    },
+    "complex_reasoning": {
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-20250514",
+      "api_key_env": "ANTHROPIC_API_KEY"
+    }
+  },
+  "security": {
+    "respect_robots_txt": true,
+    "no_purchases": true,
+    "no_tos_agreements": true,
+    "no_captcha_bypass": true,
+    "no_content_posting": true,
+    "blocked_domains": [],
+    "allowed_schemes": ["http", "https"]
+  }
+}

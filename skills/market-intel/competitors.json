@@ -1,0 +1,400 @@
+{
+  "last_updated": null,
+  "competitors": {
+    "servicetitan": {
+      "name": "ServiceTitan",
+      "category": "fsm_platform",
+      "website": "https://www.servicetitan.com",
+      "pricing": {
+        "model": "per_technician_monthly",
+        "tiers": [
+          {
+            "name": "Starter",
+            "price_range": "$149-199/tech/month",
+            "features": ["Dispatching", "Invoicing", "Basic reporting"]
+          },
+          {
+            "name": "Essentials",
+            "price_range": "$249-299/tech/month",
+            "features": ["Marketing tools", "Pricebook", "Advanced reporting"]
+          },
+          {
+            "name": "The Works",
+            "price_range": "$349+/tech/month",
+            "features": ["Full suite", "Phones", "Marketing Pro"]
+          }
+        ],
+        "last_checked": null,
+        "notes": "Enterprise focus, requires annual contract, minimum tech count varies"
+      },
+      "value_proposition": "All-in-one field service management platform for residential and commercial contractors. Covers dispatching, invoicing, marketing, reporting, and phone tracking.",
+      "weaknesses": [
+        "Very expensive — out of reach for small shops (1-5 techs)",
+        "Complex setup with long onboarding (weeks to months)",
+        "Locked into annual contracts with steep cancellation fees",
+        "Overkill for contractors who just need phone/call management",
+        "Customer support complaints about slow response times",
+        "Steep learning curve for non-tech-savvy owners"
+      ],
+      "common_complaints": [
+        "Too expensive for what we use",
+        "We only use 20% of the features",
+        "Onboarding took forever",
+        "Support is slow to respond",
+        "Locked into a long contract",
+        "Price keeps going up at renewal"
+      ],
+      "nevermiss_positioning": "NeverMiss solves the missed-call problem at a fraction of ServiceTitan's cost without requiring a complex platform overhaul. Works alongside ServiceTitan for shops that already have it."
+    },
+    "housecall_pro": {
+      "name": "Housecall Pro",
+      "category": "fsm_platform",
+      "website": "https://www.housecallpro.com",
+      "pricing": {
+        "model": "flat_monthly",
+        "tiers": [
+          {
+            "name": "Basic",
+            "price_range": "$59/month",
+            "features": ["Scheduling", "Invoicing", "Estimates", "1 user"]
+          },
+          {
+            "name": "Essentials",
+            "price_range": "$149/month",
+            "features": ["Up to 5 users", "Online booking", "Quickbooks integration"]
+          },
+          {
+            "name": "MAX",
+            "price_range": "Custom pricing",
+            "features": ["Unlimited users", "Advanced reporting", "Open API"]
+          }
+        ],
+        "last_checked": null,
+        "notes": "More affordable than ServiceTitan but still a full FSM platform"
+      },
+      "value_proposition": "Cloud-based field service management built for home service pros. Scheduling, dispatching, invoicing, and marketing in one platform.",
+      "weaknesses": [
+        "Phone management is an afterthought — no true missed-call AI",
+        "Customer support quality has declined as they scaled",
+        "Features can be buggy after updates",
+        "Limited customization for specific trade workflows",
+        "Marketing tools are basic compared to dedicated solutions",
+        "Reporting limitations frustrate data-driven owners"
+      ],
+      "common_complaints": [
+        "App crashes and bugs after updates",
+        "Customer support has gotten worse",
+        "They keep raising prices",
+        "Can't customize workflows enough",
+        "Phone features are limited",
+        "Notifications are unreliable"
+      ],
+      "nevermiss_positioning": "Housecall Pro manages jobs but lets calls slip through the cracks. NeverMiss ensures every call gets answered and booked, plugging HCP's biggest gap."
+    },
+    "jobber": {
+      "name": "Jobber",
+      "category": "fsm_platform",
+      "website": "https://getjobber.com",
+      "pricing": {
+        "model": "flat_monthly",
+        "tiers": [
+          {
+            "name": "Core",
+            "price_range": "$49/month",
+            "features": ["Quoting", "Invoicing", "Scheduling", "CRM", "1 user"]
+          },
+          {
+            "name": "Connect",
+            "price_range": "$129/month",
+            "features": ["Up to 5 users", "Automated follow-ups", "Online booking"]
+          },
+          {
+            "name": "Grow",
+            "price_range": "$249/month",
+            "features": ["Up to 15 users", "Job costing", "GPS tracking", "2-way text"]
+          }
+        ],
+        "last_checked": null,
+        "notes": "Popular with smaller contractors, strong SMB focus"
+      },
+      "value_proposition": "Simple, affordable field service software for small home service businesses. Easy quoting, scheduling, invoicing, and client communication.",
+      "weaknesses": [
+        "No real AI phone answering — missed calls still go to voicemail",
+        "Limited scalability for growing businesses",
+        "Basic reporting compared to ServiceTitan",
+        "No built-in marketing tools",
+        "Two-way texting only on highest tier",
+        "Integration ecosystem is limited"
+      ],
+      "common_complaints": [
+        "Outgrew it quickly as we hired more techs",
+        "Wish it had better phone management",
+        "Reporting is too basic for our needs",
+        "Two-way texting costs extra",
+        "Limited integrations",
+        "Calendar sync issues"
+      ],
+      "nevermiss_positioning": "Jobber handles the job workflow but leaves the front door (the phone) unattended. NeverMiss is the AI receptionist that ensures no Jobber user ever loses a lead to a missed call."
+    },
+    "podium": {
+      "name": "Podium",
+      "category": "messaging_platform",
+      "website": "https://www.podium.com",
+      "pricing": {
+        "model": "flat_monthly",
+        "tiers": [
+          {
+            "name": "Core",
+            "price_range": "$399/month",
+            "features": ["Reviews", "Webchat", "Textable number", "Payments"]
+          },
+          {
+            "name": "Pro",
+            "price_range": "$599/month",
+            "features": ["Automations", "Routing", "Advanced analytics"]
+          },
+          {
+            "name": "Signature",
+            "price_range": "Custom",
+            "features": ["Multi-location", "Custom integrations", "Dedicated support"]
+          }
+        ],
+        "last_checked": null,
+        "notes": "Expensive for what it does, focused on reviews and messaging"
+      },
+      "value_proposition": "Centralized business messaging platform. Collects reviews, manages webchat, enables text marketing, and processes payments.",
+      "weaknesses": [
+        "Very expensive for small contractors ($399+/month)",
+        "Focused on messaging/reviews, not actual phone answering",
+        "Long contracts (often 12-24 months)",
+        "Complex setup for simple needs",
+        "AI capabilities are limited to templated responses",
+        "Doesn't actually answer phone calls"
+      ],
+      "common_complaints": [
+        "Way too expensive for a small business",
+        "Locked into a long contract we regret",
+        "Doesn't actually answer our phone",
+        "Sales team overpromised features",
+        "Cancellation process is a nightmare",
+        "Too many features we don't use"
+      ],
+      "nevermiss_positioning": "Podium manages text conversations but can't pick up the phone. NeverMiss handles the actual call — the moment that matters most — at a fraction of Podium's cost."
+    },
+    "smith_ai": {
+      "name": "Smith.ai",
+      "category": "live_answering",
+      "website": "https://smith.ai",
+      "pricing": {
+        "model": "per_call_monthly",
+        "tiers": [
+          {
+            "name": "Starter",
+            "price_range": "$292.50/month",
+            "features": ["30 calls", "Live receptionist", "Lead qualification"]
+          },
+          {
+            "name": "Basic",
+            "price_range": "$750/month",
+            "features": ["90 calls", "CRM integration", "Appointment booking"]
+          },
+          {
+            "name": "Pro",
+            "price_range": "$1,500/month",
+            "features": ["200 calls", "Custom scripting", "Priority support"]
+          }
+        ],
+        "last_checked": null,
+        "notes": "Per-call pricing gets expensive fast for busy contractors"
+      },
+      "value_proposition": "Live virtual receptionists blended with AI. Human agents answer calls, qualify leads, book appointments, and integrate with CRMs.",
+      "weaknesses": [
+        "Gets very expensive at volume ($7.50-10+/call)",
+        "Human receptionists aren't available truly 24/7 in practice",
+        "Hold times during peak hours",
+        "Receptionists don't know the contractor's business deeply",
+        "Inconsistent quality depending on which receptionist answers",
+        "Per-call model penalizes busy businesses"
+      ],
+      "common_complaints": [
+        "Costs way more than expected when calls picked up",
+        "Receptionists didn't know our services well",
+        "Got charged for spam calls",
+        "Quality varies between receptionists",
+        "Hold times during busy periods",
+        "Overage charges surprised us"
+      ],
+      "nevermiss_positioning": "NeverMiss delivers always-on AI answering at a predictable flat rate. No per-call surprises, no hold times, no inconsistent quality. AI that actually learns the contractor's business."
+    },
+    "ruby_receptionists": {
+      "name": "Ruby Receptionists",
+      "category": "live_answering",
+      "website": "https://www.ruby.com",
+      "pricing": {
+        "model": "per_minute_monthly",
+        "tiers": [
+          {
+            "name": "Call Ruby 50",
+            "price_range": "$235/month",
+            "features": ["50 receptionist minutes", "Live answering", "Message taking"]
+          },
+          {
+            "name": "Call Ruby 100",
+            "price_range": "$375/month",
+            "features": ["100 minutes", "Call routing", "Basic intake"]
+          },
+          {
+            "name": "Call Ruby 200",
+            "price_range": "$680/month",
+            "features": ["200 minutes", "Lead qualification", "Appointment scheduling"]
+          },
+          {
+            "name": "Call Ruby 500",
+            "price_range": "$1,640/month",
+            "features": ["500 minutes", "Full virtual receptionist"]
+          }
+        ],
+        "last_checked": null,
+        "notes": "Per-minute model, expensive at scale, focused on professional services"
+      },
+      "value_proposition": "Live virtual receptionist service with US-based receptionists. Professional call handling, message taking, and basic appointment scheduling.",
+      "weaknesses": [
+        "Per-minute billing burns through minutes fast with chatty callers",
+        "Not specialized for home services/contracting",
+        "Limited after-hours coverage compared to AI",
+        "Receptionists can only follow simple scripts",
+        "No AI intelligence — purely human-operated",
+        "Minutes run out fast for busy shops"
+      ],
+      "common_complaints": [
+        "Blew through our minutes in the first two weeks",
+        "Overage rates are really expensive",
+        "Receptionists don't understand our trade",
+        "After-hours coverage is hit or miss",
+        "Can't handle complex scheduling",
+        "Not worth the cost for high call volume"
+      ],
+      "nevermiss_positioning": "Ruby charges by the minute and runs out fast. NeverMiss is unlimited AI answering for a flat rate — no minute caps, no overages, true 24/7 coverage."
+    },
+    "numa": {
+      "name": "Numa",
+      "category": "ai_phone",
+      "website": "https://www.numa.com",
+      "pricing": {
+        "model": "flat_monthly",
+        "tiers": [
+          {
+            "name": "Standard",
+            "price_range": "$99-149/month",
+            "features": ["Missed call texting", "Review requests", "Basic AI responses"]
+          },
+          {
+            "name": "Pro",
+            "price_range": "$199-299/month",
+            "features": ["AI phone answering", "Booking", "Multi-location"]
+          }
+        ],
+        "last_checked": null,
+        "notes": "Automotive-focused originally, expanding into home services"
+      },
+      "value_proposition": "AI-powered phone answering and customer communication platform. Automatically texts back missed calls and provides basic AI phone answering.",
+      "weaknesses": [
+        "Originally built for automotive dealerships, not home services",
+        "AI conversations are template-heavy and rigid",
+        "Can't handle complex booking scenarios (multi-service, scheduling nuance)",
+        "Limited integration with home service tools",
+        "Text-back approach feels impersonal to callers expecting a voice",
+        "AI doesn't deeply understand trade-specific terminology"
+      ],
+      "common_complaints": [
+        "AI responses felt robotic and generic",
+        "Couldn't handle our specific services properly",
+        "Built for car dealers, not contractors",
+        "Text-back isn't enough — customers want to talk",
+        "Limited customization for our workflow",
+        "Integration with our FSM was clunky"
+      ],
+      "nevermiss_positioning": "Numa texts back. NeverMiss actually converses. Our AI understands contractor businesses, handles complex scheduling, and delivers a genuine phone experience — not just an automated text."
+    },
+    "hatch": {
+      "name": "Hatch",
+      "category": "ai_engagement",
+      "website": "https://www.usehatchapp.com",
+      "pricing": {
+        "model": "flat_monthly",
+        "tiers": [
+          {
+            "name": "Starter",
+            "price_range": "$249/month",
+            "features": ["AI-powered outreach", "Multi-channel messaging", "Lead follow-up"]
+          },
+          {
+            "name": "Growth",
+            "price_range": "$449/month",
+            "features": ["Advanced automations", "Custom workflows", "Analytics"]
+          },
+          {
+            "name": "Pro",
+            "price_range": "$649+/month",
+            "features": ["Multi-location", "API access", "Dedicated support"]
+          }
+        ],
+        "last_checked": null,
+        "notes": "Focused on outbound lead engagement and reactivation, not inbound call handling"
+      },
+      "value_proposition": "AI-powered customer engagement platform for home services. Automates lead follow-up, appointment reminders, and re-engagement campaigns via text and email.",
+      "weaknesses": [
+        "Focused on outbound, not inbound call handling",
+        "Doesn't answer live phone calls",
+        "Expensive for what is essentially automated text outreach",
+        "AI conversations are template-driven, not truly intelligent",
+        "Doesn't solve the core missed-call problem",
+        "Overlap with features already in most FSM platforms"
+      ],
+      "common_complaints": [
+        "Doesn't actually answer our phone",
+        "Expensive for automated texting",
+        "Our FSM already does follow-up texts",
+        "AI responses aren't smart enough",
+        "Customers want to talk to someone, not get a text",
+        "ROI is hard to measure"
+      ],
+      "nevermiss_positioning": "Hatch chases leads after the fact. NeverMiss catches them in the moment — answering the call live so the lead never slips away in the first place."
+    }
+  },
+  "positioning_summary": {
+    "vs_live_answering": {
+      "competitors": ["smith_ai", "ruby_receptionists"],
+      "headline": "Always-on AI at a fraction of the cost",
+      "key_points": [
+        "Flat-rate pricing vs per-call/per-minute billing that escalates unpredictably",
+        "True 24/7/365 coverage with zero hold times",
+        "AI that learns the specific business vs generic human scripts",
+        "No quality variance — consistent experience every call",
+        "Scales infinitely without cost spikes during busy seasons"
+      ]
+    },
+    "vs_fsm_platforms": {
+      "competitors": ["servicetitan", "housecall_pro", "jobber"],
+      "headline": "Solve the missed-call problem without overhauling your entire stack",
+      "key_points": [
+        "Works alongside existing FSM tools — no rip-and-replace",
+        "Fraction of the cost (no per-tech pricing)",
+        "Set up in minutes, not weeks",
+        "Focused on the #1 revenue leak: unanswered calls",
+        "No long-term contracts or complex onboarding"
+      ]
+    },
+    "vs_basic_missed_call": {
+      "competitors": ["numa", "hatch", "podium"],
+      "headline": "Smarter than text-back, cheaper than enterprise messaging",
+      "key_points": [
+        "Actually answers the call with AI voice, not just texts back",
+        "Understands trade-specific language and services",
+        "Handles complex booking scenarios (multi-service, urgency routing)",
+        "Built specifically for home service contractors",
+        "Genuinely conversational AI vs templated robotic responses"
+      ]
+    }
+  }
+}

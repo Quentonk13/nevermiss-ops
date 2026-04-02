@@ -1,0 +1,40 @@
+{
+  "version": "1.0.0",
+  "last_updated": null,
+  "by_objection_type": {
+    "price": [],
+    "timing": [],
+    "competitor": [],
+    "no_need": [],
+    "need_to_think": [],
+    "talk_to_partner": [],
+    "already_have_solution": [],
+    "too_busy": [],
+    "bad_experience": [],
+    "other": []
+  },
+  "by_vertical": {
+    "HVAC": [],
+    "plumbing": [],
+    "electrical": [],
+    "roofing": [],
+    "pest_control": [],
+    "landscaping": [],
+    "painting": [],
+    "general_contractor": [],
+    "fencing": [],
+    "concrete": [],
+    "flooring": [],
+    "remodeling": [],
+    "other": []
+  },
+  "by_stage": {
+    "initial_contact": [],
+    "objection_handling": [],
+    "qualification": [],
+    "demo_booking": [],
+    "demo_followup": [],
+    "closing": [],
+    "re_engagement": []
+  }
+}

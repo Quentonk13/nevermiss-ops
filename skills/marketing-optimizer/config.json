@@ -1,0 +1,112 @@
+{
+  "skill_name": "marketing-optimizer",
+  "version": "1.0.0",
+  "enabled": true,
+  "trigger": {
+    "weekly_deep_run": {
+      "cron": "0 5 * * 2",
+      "timezone": "America/Los_Angeles",
+      "description": "Full ROI recalc, positioning analysis, expansion eval"
+    },
+    "daily_lightweight": {
+      "cron": "0 7 * * *",
+      "timezone": "America/Los_Angeles",
+      "description": "Channel ROI update, Facebook prioritization, draft queue"
+    }
+  },
+  "llm": {
+    "groq": {
+      "provider": "groq",
+      "model": "llama-3.1-70b-versatile",
+      "api_key_env": "GROQ_API_KEY",
+      "max_tokens_per_call": 2048,
+      "temperature": 0.2,
+      "timeout_seconds": 30,
+      "max_retries": 2
+    },
+    "claude": {
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-20250514",
+      "api_key_env": "ANTHROPIC_API_KEY",
+      "max_tokens_per_call": 2048,
+      "temperature": 0.3,
+      "timeout_seconds": 60,
+      "max_retries": 1,
+      "weekly_spend_cap_usd": 10.00,
+      "cost_per_1k_input_tokens": 0.003,
+      "cost_per_1k_output_tokens": 0.015
+    }
+  },
+  "channel_roi": {
+    "sources": ["apollo", "google_maps", "yelp", "facebook"],
+    "min_leads_for_evaluation": 10,
+    "reallocation_step_pct": 10,
+    "min_allocation_pct": 5,
+    "rebalance_interval_days": 7
+  },
+  "vertical_expansion": {
+    "max_tier_changes_per_cycle": 1,
+    "min_leads_for_promotion": 15,
+    "min_conversion_rate_for_promotion": 0.10,
+    "underperformance_threshold_ratio": 0.3,
+    "variants_to_generate": 3
+  },
+  "geo_expansion": {
+    "max_new_cities_per_month": 2,
+    "min_population": 200000,
+    "adjacent_city_max_distance_miles": 150,
+    "new_city_evaluation_period_days": 30,
+    "min_contractor_activity_score": 0.5
+  },
+  "facebook_strategy": {
+    "max_drafts_per_day": 3,
+    "draft_types": ["question", "pain_point", "insight"],
+    "approval_required": true,
+    "min_posts_for_yield_ranking": 5,
+    "priority_recalc_interval_days": 7
+  },
+  "positioning": {
+    "competitors": [
+      "ServiceTitan",
+      "HouseCall Pro",
+      "Jobber",
+      "Podium",
+      "Smith.ai",
+      "Ruby",
+      "Numa",
+      "Hatch"
+    ],
+    "min_deals_for_analysis": 5,
+    "analysis_interval_days": 7
+  },
+  "content_angles": {
+    "seasonal_variants": {
+      "busy_season_months": [4, 5, 6, 7, 8, 9],
+      "slow_season_months": [10, 11, 12, 1, 2, 3]
+    },
+    "min_mentions_for_trend": 3,
+    "max_new_angles_per_cycle": 2,
+    "qa_validation_required": true
+  },
+  "guardrails": {
+    "claude_weekly_spend_cap_usd": 10.00,
+    "facebook_approval_required": true,
+    "geo_max_new_cities_per_month": 2,
+    "vertical_max_tier_changes_per_cycle": 1,
+    "log_all_changes_with_reasoning": true
+  },
+  "protected_fields": [
+    "price",
+    "founding_member_cap",
+    "core_value_prop"
+  ],
+  "data_paths": {
+    "channel_roi": "skills/marketing-optimizer/channel_roi.json",
+    "facebook_drafts_dir": "skills/marketing-optimizer/facebook_drafts",
+    "optimization_log": "data/optimization/marketing_optimization_log.jsonl",
+    "competitive_positioning": "data/optimization/competitive_positioning.json",
+    "system_log": "data/system_log.jsonl",
+    "crm": "data/crm.json",
+    "send_log": "data/outreach_send_log.json"
+  }
+}

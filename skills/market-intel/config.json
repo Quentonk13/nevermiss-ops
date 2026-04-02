@@ -1,0 +1,169 @@
+{
+  "skill_name": "market-intel",
+  "version": "1.0.0",
+  "trigger": {
+    "weekly_full_refresh": {
+      "cron": "0 6 * * 0",
+      "timezone": "America/Los_Angeles",
+      "description": "Full competitor and vertical research refresh every Sunday 6AM PT"
+    },
+    "daily_forum_monitoring": {
+      "cron": "0 7 * * *",
+      "timezone": "America/Los_Angeles",
+      "description": "Daily Facebook/forum scan for messaging intelligence"
+    }
+  },
+  "llm": {
+    "provider": "groq",
+    "model": "llama-3.1-70b-versatile",
+    "api_key_env": "GROQ_API_KEY",
+    "max_tokens_per_call": 2048,
+    "temperature": 0.1
+  },
+  "competitors": [
+    {
+      "name": "ServiceTitan",
+      "slug": "servicetitan",
+      "category": "fsm_platform",
+      "website": "https://www.servicetitan.com",
+      "pricing_url": "https://www.servicetitan.com/pricing",
+      "review_sources": ["g2", "capterra", "google"]
+    },
+    {
+      "name": "Housecall Pro",
+      "slug": "housecall_pro",
+      "category": "fsm_platform",
+      "website": "https://www.housecallpro.com",
+      "pricing_url": "https://www.housecallpro.com/pricing",
+      "review_sources": ["g2", "capterra", "google"]
+    },
+    {
+      "name": "Jobber",
+      "slug": "jobber",
+      "category": "fsm_platform",
+      "website": "https://getjobber.com",
+      "pricing_url": "https://getjobber.com/pricing",
+      "review_sources": ["g2", "capterra", "google"]
+    },
+    {
+      "name": "Podium",
+      "slug": "podium",
+      "category": "messaging_platform",
+      "website": "https://www.podium.com",
+      "pricing_url": "https://www.podium.com/pricing",
+      "review_sources": ["g2", "capterra", "google"]
+    },
+    {
+      "name": "Smith.ai",
+      "slug": "smith_ai",
+      "category": "live_answering",
+      "website": "https://smith.ai",
+      "pricing_url": "https://smith.ai/pricing",
+      "review_sources": ["g2", "capterra", "google"]
+    },
+    {
+      "name": "Ruby Receptionists",
+      "slug": "ruby_receptionists",
+      "category": "live_answering",
+      "website": "https://www.ruby.com",
+      "pricing_url": "https://www.ruby.com/pricing",
+      "review_sources": ["g2", "capterra", "google"]
+    },
+    {
+      "name": "Numa",
+      "slug": "numa",
+      "category": "ai_phone",
+      "website": "https://www.numa.com",
+      "pricing_url": "https://www.numa.com/pricing",
+      "review_sources": ["g2", "capterra", "google"]
+    },
+    {
+      "name": "Hatch",
+      "slug": "hatch",
+      "category": "ai_engagement",
+      "website": "https://www.usehatchapp.com",
+      "pricing_url": "https://www.usehatchapp.com/pricing",
+      "review_sources": ["g2", "capterra", "google"]
+    }
+  ],
+  "positioning_categories": {
+    "vs_live_answering": {
+      "competitors": ["smith_ai", "ruby_receptionists"],
+      "nevermiss_advantages": ["cheaper", "always_on_24_7", "no_human_staffing_gaps", "instant_response", "scales_infinitely"]
+    },
+    "vs_fsm_platforms": {
+      "competitors": ["servicetitan", "housecall_pro", "jobber"],
+      "nevermiss_advantages": ["simpler_focused", "no_complex_setup", "solves_one_critical_problem", "fraction_of_cost", "works_alongside_existing_tools"]
+    },
+    "vs_basic_missed_call": {
+      "competitors": ["numa", "hatch", "podium"],
+      "nevermiss_advantages": ["smarter_ai_conversation", "not_just_text_back", "actual_booking_capability", "context_aware", "learns_business_specifics"]
+    }
+  },
+  "verticals": {
+    "tier_1": ["hvac", "plumbing", "electrical"],
+    "tier_2": ["roofing", "pest_control", "landscaping", "painting"],
+    "tier_3": ["general_contractor", "fencing", "concrete", "flooring", "remodeling"]
+  },
+  "forum_monitoring": {
+    "facebook_groups": {
+      "search_keywords": [
+        "HVAC contractors",
+        "plumbing business owners",
+        "electrical contractor",
+        "home service business",
+        "contractor marketing",
+        "service business growth"
+      ]
+    },
+    "reddit_subreddits": [
+      "r/HVAC",
+      "r/Plumbing",
+      "r/electricians",
+      "r/HomeImprovement",
+      "r/smallbusiness",
+      "r/Contractor"
+    ],
+    "search_phrases": [
+      "missed calls",
+      "losing customers",
+      "can't answer phone",
+      "answering service",
+      "too busy for calls",
+      "after hours calls",
+      "phone system",
+      "voicemail problem",
+      "hiring receptionist",
+      "virtual receptionist",
+      "AI phone",
+      "missed call text back"
+    ]
+  },
+  "review_platforms": {
+    "g2": {
+      "base_url": "https://www.g2.com/products/{slug}/reviews",
+      "sort": "most_recent"
+    },
+    "capterra": {
+      "base_url": "https://www.capterra.com/p/{slug}/reviews",
+      "sort": "most_recent"
+    },
+    "google": {
+      "search_template": "{competitor_name} reviews"
+    }
+  },
+  "data_paths": {
+    "competitors_dir": "data/market_research/competitors",
+    "positioning_dir": "data/market_research/positioning",
+    "verticals_dir": "data/market_research/verticals",
+    "messaging_dir": "data/market_research/messaging",
+    "log_path": "data/system_log.jsonl"
+  },
+  "refresh_intervals": {
+    "competitor_pricing_days": 7,
+    "competitor_reviews_days": 7,
+    "vertical_research_days": 30,
+    "messaging_patterns_days": 1,
+    "positioning_document_days": 7
+  }
+}

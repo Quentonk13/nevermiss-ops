@@ -1,0 +1,98 @@
+{
+  "competitor": "Ruby",
+  "last_updated": null,
+  "overview": "Ruby (formerly Ruby Receptionists) provides live virtual receptionists on a per-minute billing model. Their core vulnerability is the per-minute pricing structure, which makes costs wildly unpredictable and punishes businesses whose customers are chatty or have complex service needs.",
+  "weaknesses": [
+    {
+      "id": "rb_w1",
+      "category": "pricing",
+      "weakness": "Per-minute billing creates extreme cost unpredictability",
+      "severity": "critical",
+      "exploitable": true,
+      "talk_track": "Ruby charges by the minute. A homeowner describing their plumbing emergency takes 5 minutes? That one call costs $23.50 in overage on the base plan. With NeverMiss at $297 flat, we handle unlimited leads. You never even think about the bill.",
+      "evidence": "Pricing page clearly shows per-minute model; widespread review complaints about bill shock"
+    },
+    {
+      "id": "rb_w2",
+      "category": "pricing",
+      "weakness": "Base plans have very low minute allotments",
+      "severity": "high",
+      "exploitable": true,
+      "talk_track": "Ruby's cheapest plan gives you 50 minutes. At an average of 3-4 minutes per call, that's about 13-16 calls for $235. NeverMiss handles hundreds of leads for $297. Do the math on your call volume and Ruby's cost gets scary fast.",
+      "evidence": "Published tier structure"
+    },
+    {
+      "id": "rb_w3",
+      "category": "availability",
+      "weakness": "Primary coverage is business hours; after-hours is add-on with limitations",
+      "severity": "high",
+      "exploitable": true,
+      "talk_track": "Ruby's core service is daytime coverage. After-hours is an add-on that costs extra and has more limited capabilities. Your highest-value emergency calls come at night and on weekends. NeverMiss is the same 24/7.",
+      "evidence": "Pricing page shows after-hours as separate tier; reviews cite coverage gaps"
+    },
+    {
+      "id": "rb_w4",
+      "category": "quality",
+      "weakness": "No control over call duration means you pay for small talk",
+      "severity": "medium",
+      "exploitable": true,
+      "talk_track": "When a Ruby receptionist chats with a caller for 7 minutes, you pay for all 7 minutes. You can't control how long a caller talks. NeverMiss is flat rate -- a quick text-back handles the same request in seconds.",
+      "evidence": "Per-minute model inherently penalizes longer interactions"
+    },
+    {
+      "id": "rb_w5",
+      "category": "technology",
+      "weakness": "Text and chat features are afterthoughts, not core product",
+      "severity": "medium",
+      "exploitable": true,
+      "talk_track": "Ruby was built for phone calls. Their text and chat features were bolted on later. NeverMiss was built from the ground up for text-back -- the communication channel modern homeowners prefer.",
+      "evidence": "Product history and feature rollout timeline"
+    }
+  ],
+  "our_advantages": [
+    {
+      "advantage": "Flat pricing eliminates bill anxiety",
+      "against_weakness": "rb_w1",
+      "proof_point": "$297/mo flat vs $235 for 50 minutes that runs out after ~15 calls"
+    },
+    {
+      "advantage": "Unlimited volume at fixed cost",
+      "against_weakness": "rb_w2",
+      "proof_point": "Peak season with 200 leads costs $297. Same as slow month."
+    },
+    {
+      "advantage": "True 24/7/365 without add-on fees",
+      "against_weakness": "rb_w3",
+      "proof_point": "After-hours coverage is included, not an upsell"
+    },
+    {
+      "advantage": "Instant text response vs metered phone minutes",
+      "against_weakness": "rb_w4",
+      "proof_point": "Text-back in 60 seconds, no minute meter running"
+    },
+    {
+      "advantage": "Text-native architecture",
+      "against_weakness": "rb_w5",
+      "proof_point": "Built for text-first from day one"
+    }
+  ],
+  "talk_tracks": {
+    "when_lead_mentions_ruby": "Ruby's receptionists are friendly -- and they charge you by the minute for that friendliness. A busy month can easily blow past your plan and cost $500+. NeverMiss is $297 flat. Unlimited leads, 24/7, no per-minute meter running.",
+    "when_lead_is_comparing_prices": "Ruby starts at $235 for 50 minutes. Sounds reasonable until you do the math: average home services call is 3-4 minutes. That's 12-16 calls. Most HVAC companies get that in a week during summer. Overages at $4.70/min add up fast. NeverMiss: $297, unlimited, done.",
+    "when_lead_values_human_touch": "Ruby has great people. But you're paying $4.70 per minute for them. When a worried homeowner describes their flooding basement for 8 minutes, that one call costs $37.60. NeverMiss texts them back in 55 seconds, gets the appointment booked, and it costs you $0 extra.",
+    "when_lead_is_current_ruby_customer": "What's your average monthly Ruby bill landing at? A lot of home services owners tell me it starts at $235 and creeps to $400-600 during busy season. NeverMiss is $297 every single month. Want to compare what you're paying per lead?"
+  },
+  "deploy_when": [
+    "Lead explicitly mentions Ruby or 'Ruby Receptionists'",
+    "Lead mentions 'per-minute' answering service",
+    "Lead mentions 'virtual receptionist' service",
+    "Lead complains about phone answering costs or overages",
+    "CRM notes indicate current Ruby customer",
+    "Lead asks about minute-based pricing"
+  ],
+  "counter_objections": {
+    "but_ruby_answers_phones": "Answering phones is valuable. But charging by the minute for it means you're penalized for having customers with real problems to describe. NeverMiss handles it via text in seconds at a flat rate.",
+    "ruby_is_a_known_brand": "They are -- and their pricing model is why they can afford all that marketing. Your dollars go to their brand, not your leads. NeverMiss puts every dollar toward catching your missed calls.",
+    "i_want_a_live_voice": "Totally understand. But consider: 78% of homeowners under 50 prefer text. And the ones calling at 11pm with an emergency? They'd rather get an instant text-back than a voicemail from Ruby's closed office."
+  }
+}

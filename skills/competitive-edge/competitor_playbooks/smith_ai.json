@@ -1,0 +1,98 @@
+{
+  "competitor": "Smith.ai",
+  "last_updated": null,
+  "overview": "Smith.ai uses live human receptionists to answer phone calls. They are the most established competitor in the answering service space for small businesses. Their core weakness is human dependency: business hours only, per-call pricing that scales poorly, and inability to learn or adapt over time.",
+  "weaknesses": [
+    {
+      "id": "sa_w1",
+      "category": "availability",
+      "weakness": "Business hours only coverage (M-F, roughly 6am-6pm PT)",
+      "severity": "critical",
+      "exploitable": true,
+      "talk_track": "Smith.ai's receptionists go home at 6pm. But when does a homeowner's AC break down? Friday night at 11pm. Saturday morning. Christmas Day. Those emergency calls -- the $2,000-$5,000 jobs -- go straight to voicemail with Smith.ai.",
+      "evidence": "Multiple G2 and Capterra reviews cite after-hours coverage gaps"
+    },
+    {
+      "id": "sa_w2",
+      "category": "pricing",
+      "weakness": "Per-call pricing creates unpredictable and escalating costs",
+      "severity": "high",
+      "exploitable": true,
+      "talk_track": "Smith.ai starts at $255/mo for just 30 calls. That sounds okay until you realize a busy week eats half your plan. Go over? $8.50 per call extra. With NeverMiss, it's $297 flat. No surprises. No overages. No anxiety about answering the phone.",
+      "evidence": "Pricing page shows clear overage structure; user reviews mention bill shock"
+    },
+    {
+      "id": "sa_w3",
+      "category": "quality",
+      "weakness": "Human inconsistency -- different rep each time, script adherence varies",
+      "severity": "medium",
+      "exploitable": true,
+      "talk_track": "Every time a customer calls Smith.ai, they get a different person reading a script. Some are great, some are not. There's no memory of previous conversations. NeverMiss remembers every interaction and gets smarter about your business over time.",
+      "evidence": "Glassdoor reviews indicate high turnover; user reviews mention inconsistent call handling"
+    },
+    {
+      "id": "sa_w4",
+      "category": "technology",
+      "weakness": "Phone-first model in a text-first world",
+      "severity": "high",
+      "exploitable": true,
+      "talk_track": "78% of homeowners under 50 prefer texting over calling. Smith.ai is built around phone calls. NeverMiss is built around text-back -- the channel your customers actually want to use. We respond to missed calls via text in under 60 seconds.",
+      "evidence": "Industry surveys on consumer communication preferences"
+    },
+    {
+      "id": "sa_w5",
+      "category": "scalability",
+      "weakness": "Cannot scale instantly during peak periods",
+      "severity": "medium",
+      "exploitable": true,
+      "talk_track": "First hot day of summer, every HVAC company's phone rings off the hook. Smith.ai has a finite number of receptionists. Hold times go up, calls get rushed, quality drops. NeverMiss handles 1 lead or 1,000 leads with the same speed and quality.",
+      "evidence": "Seasonal complaint patterns in reviews"
+    }
+  ],
+  "our_advantages": [
+    {
+      "advantage": "24/7/365 coverage with zero gaps",
+      "against_weakness": "sa_w1",
+      "proof_point": "AI responds in under 60 seconds at 3am on Christmas Day"
+    },
+    {
+      "advantage": "Flat $297/mo regardless of volume",
+      "against_weakness": "sa_w2",
+      "proof_point": "100 leads/month = $2.97/lead vs Smith.ai's $8.50+/call"
+    },
+    {
+      "advantage": "Consistent AI that learns and improves",
+      "against_weakness": "sa_w3",
+      "proof_point": "Same quality on call 1 and call 1,000. Gets smarter, never has a bad day."
+    },
+    {
+      "advantage": "Text-native for modern consumers",
+      "against_weakness": "sa_w4",
+      "proof_point": "Responds via text within 60 seconds of missed call"
+    },
+    {
+      "advantage": "Infinite scalability with no quality degradation",
+      "against_weakness": "sa_w5",
+      "proof_point": "Peak season performance identical to slow season"
+    }
+  ],
+  "talk_tracks": {
+    "when_lead_mentions_smith_ai": "Smith.ai is solid if you want someone to answer the phone during business hours. But most home services emergencies happen after hours -- evenings, weekends, holidays. That's when the big jobs call. NeverMiss catches every single one, 24/7, and texts them back in under a minute. Plus you're looking at $297 flat vs $255+ that goes up every time the phone rings more than 30 times.",
+    "when_lead_is_comparing_prices": "Smith.ai's $255 sounds lower, but that's only 30 calls. Most home services businesses get 50-100+ calls a month. At 60 calls you're at $360, at 100 calls you're over $600. NeverMiss is $297 flat, period. No overages, no surprises.",
+    "when_lead_values_human_touch": "I get it -- a real person on the phone feels premium. But here's the thing: 78% of homeowners prefer getting a text back over sitting on hold. And Smith.ai's receptionists go home at 6pm. NeverMiss texts your customer back in under 60 seconds, any time, any day. That speed and reliability beats a human voice that's only there half the time.",
+    "when_lead_is_current_smith_ai_customer": "How's your after-hours coverage working out? Are you seeing the overage charges add up? A lot of folks switch to NeverMiss because they were tired of the unpredictable bills and missed after-hours calls. We can run alongside Smith.ai for a month so you can see the difference before you cancel anything."
+  },
+  "deploy_when": [
+    "Lead explicitly mentions Smith.ai or 'answering service'",
+    "Lead mentions 'receptionist service' or 'live answering'",
+    "Lead's email domain or website links to Smith.ai",
+    "CRM notes indicate current Smith.ai customer",
+    "Lead asks about after-hours coverage (signals awareness of the gap)",
+    "Lead mentions unpredictable phone bills or overage charges"
+  ],
+  "counter_objections": {
+    "but_smith_ai_has_real_humans": "Real humans are great -- when they're available. Smith.ai's humans go home at 6pm and take weekends off. Your customers' emergencies don't. NeverMiss is always on, always fast, and costs less.",
+    "smith_ai_can_transfer_calls": "Call transfer is useful, but 78% of customers prefer a quick text response over waiting on hold for a transfer. NeverMiss texts them instantly and books the appointment directly.",
+    "i_like_the_personal_touch": "Nothing feels more personal than a response in 55 seconds when you have a burst pipe at midnight. That's the personal touch that wins jobs."
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "skill_name": "sales-optimizer",
+  "version": "1.0.0",
+  "trigger": {
+    "post_conversation": {
+      "type": "event",
+      "on": ["closed", "lost"]
+    },
+    "weekly_deep_analysis": {
+      "cron": "0 6 * * 3",
+      "timezone": "America/Los_Angeles"
+    }
+  },
+  "llm": {
+    "claude": {
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-20250514",
+      "api_key_env": "ANTHROPIC_API_KEY",
+      "max_tokens_per_call": 2048,
+      "temperature": 0.2,
+      "weekly_spend_cap_usd": 20.00,
+      "cost_per_1k_input_tokens": 0.003,
+      "cost_per_1k_output_tokens": 0.015
+    },
+    "groq": {
+      "provider": "groq",
+      "model": "llama-3.1-70b-versatile",
+      "api_key_env": "GROQ_API_KEY",
+      "max_tokens_per_call": 2048,
+      "temperature": 0.1
+    }
+  },
+  "thresholds": {
+    "objection_batch_size": 10,
+    "demo_batch_size": 10,
+    "close_rate_drop_revert_pct": 20,
+    "lead_score_max_change_per_cycle": 1,
+    "min_conversations_for_pacing": 20,
+    "min_wins_for_phrase_extraction": 5
+  },
+  "protected_fields": [
+    "price",
+    "founding_member_cap",
+    "core_value_prop"
+  ],
+  "data": {
+    "optimization_log": "data/optimization/sales_optimization_log.jsonl",
+    "script_versions_dir": "data/optimization/script_versions",
+    "winning_phrases": "data/winning_phrases.json",
+    "system_log": "data/system_log.jsonl"
+  }
+}

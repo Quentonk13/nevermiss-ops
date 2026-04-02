@@ -1,0 +1,16 @@
+{
+  "name": "Revenue Monitor",
+  "slug": "revenue-monitor",
+  "description": "Daily revenue tracking across Gumroad, KDP, and Etsy. Automatic spike/drop alerts, weekly reports, and Telegram notifications. Built for digital product sellers.",
+  "tags": ["revenue", "gumroad", "kdp", "etsy", "sales", "monitoring", "alerts", "digital-products", "ecommerce"],
+  "version": "1.0.0",
+  "author": "tenlifejosh",
+  "license": "MIT",
+  "homepage": "https://tenlifecreatives.com",
+  "repository": "https://github.com/tenlifejosh",
+  "keywords": ["revenue", "sales-tracking", "gumroad", "kdp", "etsy", "digital-products", "monitoring"],
+  "openclaw": {
+    "skill_file": "SKILL.md",
+    "min_version": "1.0.0"
+  }
+}

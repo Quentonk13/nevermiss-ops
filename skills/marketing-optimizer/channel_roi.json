@@ -1,0 +1,91 @@
+{
+  "channels": {
+    "hunter_io": {
+      "cost_per_lead": 0,
+      "qualified_rate": 0,
+      "cost_per_qualified": 0,
+      "total_leads": 0,
+      "qualified_leads": 0,
+      "total_cost_usd": 0.00,
+      "allocation_pct": 25,
+      "conversions": 0,
+      "conversion_rate": null,
+      "trend": [],
+      "last_rebalance": null
+    },
+    "google_maps": {
+      "cost_per_lead": 0,
+      "qualified_rate": 0,
+      "cost_per_qualified": 0,
+      "total_leads": 0,
+      "qualified_leads": 0,
+      "total_cost_usd": 0.00,
+      "allocation_pct": 25,
+      "conversions": 0,
+      "conversion_rate": null,
+      "trend": [],
+      "last_rebalance": null
+    },
+    "yelp": {
+      "cost_per_lead": 0,
+      "qualified_rate": 0,
+      "cost_per_qualified": 0,
+      "total_leads": 0,
+      "qualified_leads": 0,
+      "total_cost_usd": 0.00,
+      "allocation_pct": 25,
+      "conversions": 0,
+      "conversion_rate": null,
+      "trend": [],
+      "last_rebalance": null
+    },
+    "facebook": {
+      "cost_per_lead": 0,
+      "qualified_rate": 0,
+      "cost_per_qualified": 0,
+      "total_leads": 0,
+      "qualified_leads": 0,
+      "total_cost_usd": 0.00,
+      "allocation_pct": 25,
+      "conversions": 0,
+      "conversion_rate": null,
+      "trend": [],
+      "last_rebalance": null
+    }
+  },
+  "last_updated": null,
+  "week_start": null,
+  "rebalance_history": [],
+  "vertical_performance": {
+    "tier_1": {
+      "HVAC": {"leads": 0, "conversions": 0, "conversion_rate": null, "untapped_estimate": null},
+      "plumbing": {"leads": 0, "conversions": 0, "conversion_rate": null, "untapped_estimate": null},
+      "electrical": {"leads": 0, "conversions": 0, "conversion_rate": null, "untapped_estimate": null}
+    },
+    "tier_2": {
+      "roofing": {"leads": 0, "conversions": 0, "conversion_rate": null, "untapped_estimate": null},
+      "pest_control": {"leads": 0, "conversions": 0, "conversion_rate": null, "untapped_estimate": null},
+      "landscaping": {"leads": 0, "conversions": 0, "conversion_rate": null, "untapped_estimate": null},
+      "painting": {"leads": 0, "conversions": 0, "conversion_rate": null, "untapped_estimate": null}
+    },
+    "tier_3": {
+      "general_contractor": {"leads": 0, "conversions": 0, "conversion_rate": null, "untapped_estimate": null},
+      "fencing": {"leads": 0, "conversions": 0, "conversion_rate": null, "untapped_estimate": null},
+      "concrete": {"leads": 0, "conversions": 0, "conversion_rate": null, "untapped_estimate": null},
+      "flooring": {"leads": 0, "conversions": 0, "conversion_rate": null, "untapped_estimate": null},
+      "remodeling": {"leads": 0, "conversions": 0, "conversion_rate": null, "untapped_estimate": null}
+    }
+  },
+  "geo_performance": {},
+  "geo_expansion_this_month": {
+    "month": null,
+    "cities_added": []
+  },
+  "facebook_group_rankings": [],
+  "content_angles_active": [],
+  "claude_spend_this_week": {
+    "week_start": null,
+    "total_usd": 0.00,
+    "calls": []
+  }
+}

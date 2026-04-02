@@ -1,0 +1,185 @@
+{
+  "last_updated": null,
+  "our_product": {
+    "name": "NeverMiss",
+    "price_monthly": 297,
+    "price_display": "$297/mo",
+    "model": "flat_rate",
+    "what_you_get": "Intelligent AI text-back within 60 seconds, 24/7/365, unlimited leads, learns your business, books appointments automatically",
+    "hidden_costs": "None. Flat rate, no per-minute, no per-call, no setup fees.",
+    "key_differentiators": [
+      "AI-powered intelligent responses (not templates)",
+      "24/7/365 coverage including holidays",
+      "Learns your specific business and services",
+      "Under 60 second response time",
+      "Flat rate regardless of volume",
+      "Text-back (preferred channel for homeowners)",
+      "Automated appointment booking",
+      "No human staffing limitations"
+    ]
+  },
+  "competitors": {
+    "smith_ai": {
+      "name": "Smith.ai",
+      "price_range_monthly": [255, 600],
+      "price_display": "$255-$600/mo",
+      "model": "tiered_per_call",
+      "tiers": [
+        {"name": "Starter", "price": 255, "calls": 30, "overage_per_call": 8.50},
+        {"name": "Basic", "price": 360, "calls": 60, "overage_per_call": 6.00},
+        {"name": "Pro", "price": 600, "calls": 120, "overage_per_call": 5.00}
+      ],
+      "what_you_get": "Live human receptionists answer phone calls during business hours",
+      "hidden_costs": [
+        "Overage charges per call beyond plan limit",
+        "After-hours calls go to voicemail",
+        "Add-on fees for appointment booking",
+        "Add-on fees for CRM integrations",
+        "Setup fee for complex call flows"
+      ],
+      "weaknesses": [
+        "Business hours only (M-F 6am-6pm PT typical)",
+        "Humans = inconsistent quality across reps",
+        "Phone-first, text-back is add-on or unavailable",
+        "Per-call pricing means cost spikes with volume",
+        "After-hours gap loses emergency calls",
+        "No AI learning -- scripts are static",
+        "Long hold times during peak periods"
+      ],
+      "last_price_check": null,
+      "price_trend": "stable"
+    },
+    "ruby": {
+      "name": "Ruby",
+      "price_range_monthly": [235, 500],
+      "price_display": "$235-$500/mo",
+      "model": "per_minute",
+      "tiers": [
+        {"name": "Call Ruby 50", "price": 235, "minutes": 50, "overage_per_min": 4.70},
+        {"name": "Call Ruby 100", "price": 375, "minutes": 100, "overage_per_min": 3.75},
+        {"name": "Call Ruby 200", "price": 680, "minutes": 200, "overage_per_min": 3.40}
+      ],
+      "what_you_get": "Live human receptionists answering phone calls, per-minute billing",
+      "hidden_costs": [
+        "Per-minute billing means chatty callers cost more",
+        "Overage rates are steep",
+        "After-hours coverage costs extra",
+        "No control over call duration = unpredictable bills",
+        "Add-on fees for outbound calls, appointment booking"
+      ],
+      "weaknesses": [
+        "Per-minute billing is unpredictable and expensive",
+        "A 5-minute call on the base plan costs $23.50 in overage",
+        "Live humans cannot scale instantly",
+        "Quality varies by receptionist",
+        "Text/chat features are secondary, not core",
+        "Monthly minute pool creates anxiety about usage",
+        "Business hours focus -- after-hours is limited"
+      ],
+      "last_price_check": null,
+      "price_trend": "stable"
+    },
+    "hatch": {
+      "name": "Hatch",
+      "price_range_monthly": null,
+      "price_display": "Custom pricing (varies)",
+      "model": "custom_quote",
+      "tiers": [],
+      "what_you_get": "AI-powered text-back and follow-up sequences for home services",
+      "hidden_costs": [
+        "Pricing not transparent -- requires sales call",
+        "Per-contact or per-message pricing suspected",
+        "Setup and onboarding fees",
+        "Long-term contracts reported by users",
+        "Integration fees for non-standard CRMs"
+      ],
+      "weaknesses": [
+        "Template-based responses, not truly intelligent AI",
+        "Cannot handle complex or nuanced conversations",
+        "Opaque pricing requires sales call",
+        "Lock-in contracts reported",
+        "Generic templates feel robotic to homeowners",
+        "Limited customization per business type",
+        "Slow to adapt to new service categories"
+      ],
+      "last_price_check": null,
+      "price_trend": "unknown"
+    },
+    "numa": {
+      "name": "Numa",
+      "price_range_monthly": null,
+      "price_display": "Custom pricing (varies)",
+      "model": "custom_quote",
+      "tiers": [],
+      "what_you_get": "AI phone answering focused on restaurants and local businesses",
+      "hidden_costs": [
+        "Pricing not transparent -- requires demo",
+        "Per-location pricing",
+        "Additional fees for SMS features",
+        "Onboarding and training fees"
+      ],
+      "weaknesses": [
+        "Phone-focused, not text-back native",
+        "Originally built for restaurants, adapted for home services",
+        "AI phone conversations feel robotic",
+        "Text capabilities are secondary feature",
+        "Not specialized for home services sales",
+        "Cannot learn business-specific details deeply",
+        "Response quality drops for complex service questions"
+      ],
+      "last_price_check": null,
+      "price_trend": "unknown"
+    },
+    "nothing": {
+      "name": "Doing Nothing",
+      "price_range_monthly": [0, 0],
+      "price_display": "$0/mo",
+      "model": "free",
+      "tiers": [],
+      "what_you_get": "Missed calls go to voicemail. Maybe you call back tomorrow.",
+      "hidden_costs": [
+        "Average missed call costs home services business $500-$3,000 in lost revenue",
+        "78% of customers hire the first business that responds",
+        "After 5 minutes, lead conversion drops 80%",
+        "Weekend and evening calls = highest-value emergency jobs",
+        "Reputation damage from slow response times",
+        "Competitors answering while you sleep"
+      ],
+      "weaknesses": [
+        "Not a competitor -- this is the status quo",
+        "Every hour without coverage is money left on the table",
+        "Voicemail-to-callback takes hours or days",
+        "Owner burnout from being on-call 24/7",
+        "Cannot scale personal phone answering"
+      ],
+      "last_price_check": null,
+      "price_trend": "stable"
+    }
+  },
+  "comparison_angles": {
+    "price_per_lead": {
+      "nevermiss": "Fixed $297/mo regardless of volume. 100 leads = $2.97 each.",
+      "smith_ai": "30 calls at $255 = $8.50/call. Spikes with volume.",
+      "ruby": "50 minutes at $235. Average 3-min call = ~16 calls = $14.69/call.",
+      "hatch": "Unknown. Must talk to sales.",
+      "numa": "Unknown. Must talk to sales.",
+      "nothing": "$0 upfront but $500-3000 per missed lead."
+    },
+    "availability": {
+      "nevermiss": "24/7/365. AI never sleeps, never calls in sick, never takes vacation.",
+      "smith_ai": "Business hours only. Evenings, weekends, holidays = voicemail.",
+      "ruby": "Business hours primary. After-hours is add-on with limited coverage.",
+      "hatch": "AI-based so technically 24/7, but template quality drops off-hours.",
+      "numa": "AI-based 24/7 for phone, but text-back is secondary.",
+      "nothing": "Whenever you personally answer. Hope you never sleep."
+    },
+    "intelligence": {
+      "nevermiss": "Learns your business. Understands HVAC vs plumbing vs electrical. Adapts.",
+      "smith_ai": "Human follows script. Script is static. No learning over time.",
+      "ruby": "Human follows script. Different human each time = inconsistent.",
+      "hatch": "Template matching. Picks closest template. No real understanding.",
+      "numa": "Basic AI. Built for restaurant orders, adapted for home services.",
+      "nothing": "You know your business best, but you cannot be everywhere."
+    }
+  }
+}

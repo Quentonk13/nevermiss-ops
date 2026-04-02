@@ -1,0 +1,29 @@
+{
+  "last_updated": null,
+  "last_monthly_report": null,
+  "quick_wins": {
+    "description": "Features buildable in under 1 week. Low effort, high impact.",
+    "items": []
+  },
+  "medium_builds": {
+    "description": "Features requiring 1-4 weeks. Moderate effort, significant competitive advantage.",
+    "items": []
+  },
+  "strategic_features": {
+    "description": "Features requiring 1+ months. Major investment, market-defining potential.",
+    "items": []
+  },
+  "item_schema": {
+    "id": "unique identifier",
+    "title": "short feature name",
+    "description": "what it does and why it matters",
+    "source": "where we learned about this (review, conversation, competitor feature)",
+    "competitor_has_it": ["list of competitors with this feature"],
+    "customer_demand_signals": 0,
+    "priority_score": 0.0,
+    "status": "identified | under_review | approved | in_progress | shipped | rejected",
+    "owner_decision": null,
+    "identified_date": null,
+    "notes": ""
+  }
+}

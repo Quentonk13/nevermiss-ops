@@ -1,0 +1,98 @@
+{
+  "competitor": "Hatch",
+  "last_updated": null,
+  "overview": "Hatch is the closest direct competitor -- they do AI text-back for home services. However, their AI uses template-based responses rather than truly intelligent conversation. Their opaque pricing and reported contract lock-ins are additional vulnerabilities.",
+  "weaknesses": [
+    {
+      "id": "ht_w1",
+      "category": "technology",
+      "weakness": "Template-based AI responses that feel robotic and generic",
+      "severity": "critical",
+      "exploitable": true,
+      "talk_track": "Hatch uses templates -- pre-written responses that try to match what the customer said. But home services customers have specific, nuanced questions. 'My AC is blowing warm air and making a clicking noise' deserves a smart response, not 'Thanks for reaching out! Let me connect you with our team.' NeverMiss actually understands the conversation.",
+      "evidence": "User reviews consistently mention robotic or generic responses; demo recordings show template patterns"
+    },
+    {
+      "id": "ht_w2",
+      "category": "pricing",
+      "weakness": "Opaque pricing requires sales call -- cannot self-serve",
+      "severity": "high",
+      "exploitable": true,
+      "talk_track": "Ever tried to find Hatch's pricing? You can't. They make you sit through a sales call to find out what it costs. At NeverMiss, it's $297/month. Right there. No games, no 'let me check with my manager,' no surprise contract terms.",
+      "evidence": "No public pricing page; multiple forums discussing inability to get pricing without sales demo"
+    },
+    {
+      "id": "ht_w3",
+      "category": "business_terms",
+      "weakness": "Long-term contract lock-ins reported by users",
+      "severity": "high",
+      "exploitable": true,
+      "talk_track": "Hatch users on forums report being locked into annual contracts. If it's not working, you're stuck paying. NeverMiss is month-to-month. If we don't earn your business every month, you can leave. That's how confident we are.",
+      "evidence": "Forum posts and review mentions of contract requirements"
+    },
+    {
+      "id": "ht_w4",
+      "category": "customization",
+      "weakness": "Limited customization per business type",
+      "severity": "medium",
+      "exploitable": true,
+      "talk_track": "Hatch uses the same template framework for HVAC, plumbing, electrical, and roofing. A burst pipe at midnight needs a different response than a thermostat question. NeverMiss learns the specifics of YOUR business and YOUR services, not just your industry.",
+      "evidence": "Product demos show generic industry templates rather than business-specific learning"
+    },
+    {
+      "id": "ht_w5",
+      "category": "adaptability",
+      "weakness": "Slow to adapt templates for new service categories or seasonal changes",
+      "severity": "medium",
+      "exploitable": true,
+      "talk_track": "When you add a new service or the season changes, Hatch needs manual template updates. NeverMiss adapts automatically because it understands your business, not just keywords.",
+      "evidence": "User reviews mention lag time for template updates when business offerings change"
+    }
+  ],
+  "our_advantages": [
+    {
+      "advantage": "Truly intelligent AI vs template matching",
+      "against_weakness": "ht_w1",
+      "proof_point": "NeverMiss understands context and generates appropriate responses; does not match to pre-written templates"
+    },
+    {
+      "advantage": "Transparent flat pricing",
+      "against_weakness": "ht_w2",
+      "proof_point": "$297/mo published openly. No sales call required to learn the price."
+    },
+    {
+      "advantage": "Month-to-month, no contracts",
+      "against_weakness": "ht_w3",
+      "proof_point": "Cancel anytime. Earn business monthly."
+    },
+    {
+      "advantage": "Deep per-business customization",
+      "against_weakness": "ht_w4",
+      "proof_point": "AI learns specific services, service areas, pricing, and scheduling for each business"
+    },
+    {
+      "advantage": "Automatic adaptation to changes",
+      "against_weakness": "ht_w5",
+      "proof_point": "Add a service, change your hours -- NeverMiss adapts without manual template editing"
+    }
+  ],
+  "talk_tracks": {
+    "when_lead_mentions_hatch": "Hatch is in the same space as us -- AI text-back for home services. The difference is how the AI works. Hatch matches your customer's message to a pre-written template. NeverMiss actually understands what they're saying and responds intelligently. Try asking both a curveball question and see which one sounds like a real person.",
+    "when_lead_is_comparing_prices": "Hatch won't even tell you the price without a sales call. That's usually a sign it's higher than they want you to compare. NeverMiss is $297/mo, right up front, month-to-month. No contracts, no hidden fees.",
+    "when_lead_values_ai_texting": "If you like the idea of AI text-back, you'll love NeverMiss. We're purpose-built for it. The key difference vs Hatch is intelligence -- our AI learns your specific business instead of matching templates. Homeowners can tell the difference.",
+    "when_lead_is_current_hatch_customer": "How are your response quality scores with Hatch? A lot of folks come to us because their customers complained about generic-sounding texts. NeverMiss responses read like a knowledgeable team member wrote them, not a bot. Happy to show you a side-by-side comparison."
+  },
+  "deploy_when": [
+    "Lead explicitly mentions Hatch or 'usehatch'",
+    "Lead mentions 'AI text-back' competitor",
+    "Lead mentions template-based responses or generic AI",
+    "Lead asks about automated follow-up tools",
+    "CRM notes indicate current Hatch customer",
+    "Lead complains about robotic or generic automated responses"
+  ],
+  "counter_objections": {
+    "hatch_is_built_for_home_services": "So are we. The difference is depth. Hatch uses industry-wide templates. NeverMiss learns YOUR specific business. Two HVAC companies in the same city have different services, pricing, and availability. NeverMiss handles that. Hatch sends them the same template.",
+    "hatch_has_integrations_with_my_crm": "NeverMiss integrates with your workflow too. But integrations are table stakes -- what matters is what happens when the customer texts. Template response or intelligent conversation?",
+    "my_hatch_rep_showed_good_results": "Demo responses are always the best-case scenario. Ask to see responses to unusual questions -- the ones that don't match a template. That's where the difference shows."
+  }
+}

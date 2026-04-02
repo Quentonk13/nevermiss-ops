@@ -1,0 +1,37 @@
+{
+  "skill": "qa-guard",
+  "version": "1.0.0",
+  "enabled": true,
+  "llm": {
+    "provider": "groq",
+    "model": "llama-3.1-70b-versatile",
+    "api_key_env": "GROQ_API_KEY",
+    "timeout_seconds": 10,
+    "max_retries": 2,
+    "temperature": 0.0
+  },
+  "thresholds": {
+    "tone_score_minimum": 3,
+    "max_regeneration_attempts": 2,
+    "max_sentences_cold": 3,
+    "max_sentences_reply": 4,
+    "max_subject_words": 6
+  },
+  "spam_patterns_file": "spam_patterns.json",
+  "allowed_caps_words": ["HVAC", "CA", "AZ", "TX", "GA", "FL", "NC", "AC", "USA", "LLC", "CEO", "CFO", "COO", "VP", "GM", "OK", "ID", "OR", "OH", "AL", "AR", "CO", "CT", "DE", "HI", "IA", "IL", "IN", "KS", "KY", "LA", "MA", "MD", "ME", "MI", "MN", "MO", "MS", "MT", "ND", "NE", "NH", "NJ", "NM", "NV", "NY", "PA", "RI", "SC", "SD", "TN", "UT", "VA", "VT", "WA", "WI", "WV", "WY"],
+  "compliance": {
+    "blocked_impersonation_phrases": [
+      "I am calling on behalf of",
+      "representing the office of",
+      "this is a message from the government",
+      "official notice",
+      "legal obligation",
+      "required by law to respond",
+      "federal mandate"
+    ]
+  },
+  "logging": {
+    "log_file": "data/system_log.jsonl",
+    "log_level": "INFO"
+  }
+}

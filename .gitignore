@@ -1,0 +1,37 @@
+# Security — never commit these
+.env
+.env.*
+*.pem
+*.key
+*.cert
+*.p12
+*.pfx
+.vault/
+.guard/
+*.secret
+credentials.json
+auth-profiles.json
+*.keyring
+.encrypted_store
+
+# Config
+config.local.json
+openclaw.local.json
+
+# Data
+data/
+*.sqlite
+*.db
+
+# Logs
+*.log
+
+# Runtime
+node_modules/
+.npm/
+__pycache__/
+*.pyc
+.playwright/
+.DS_Store
+*.bak
+.openclaw/

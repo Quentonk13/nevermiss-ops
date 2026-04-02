@@ -1,0 +1,61 @@
+{
+  "skill_name": "performance-engine",
+  "version": "1.0.0",
+  "enabled": true,
+  "trigger": {
+    "type": "event+cron",
+    "cron_weekly_report": "0 20 * * 0",
+    "timezone": "America/Los_Angeles",
+    "variant_analysis_milestone": 100
+  },
+  "llm": {
+    "provider": "groq",
+    "model": "llama-3.1-70b-versatile",
+    "api_key_env": "GROQ_API_KEY",
+    "timeout_seconds": 30,
+    "max_retries": 2,
+    "temperature": 0.7
+  },
+  "targets": {
+    "reply_rate_pct": 3.0,
+    "positive_reply_rate_pct": 1.0,
+    "bounce_rate_max_pct": 5.0,
+    "qa_rejection_rate_max_pct": 10.0,
+    "open_rate_pct": 40.0,
+    "contacted_to_replied_pct": 5.0,
+    "replied_to_qualified_pct": 30.0,
+    "qualified_to_booked_pct": 50.0,
+    "booked_to_closed_pct": 40.0
+  },
+  "ab_testing": {
+    "confidence_level": 0.95,
+    "z_critical": 1.96,
+    "underperformance_threshold_multiplier": 2.0,
+    "min_emails_per_variant": 100,
+    "max_active_variants": 3,
+    "auto_generate_replacement": true,
+    "require_owner_approval": true
+  },
+  "revenue": {
+    "default_mrr_per_deal": 297,
+    "founding_member_mrr": 297
+  },
+  "data_paths": {
+    "crm": "data/crm.json",
+    "outreach_log": "data/outreach_log.jsonl",
+    "replies_log": "data/replies_log.jsonl",
+    "system_log": "data/system_log.jsonl",
+    "inbox_warmup_tracker": "data/inbox_warmup_tracker.json",
+    "performance_metrics": "data/performance_metrics.json"
+  },
+  "report": {
+    "delivery_method": "openclaw_message",
+    "include_cost_breakdown": true,
+    "include_recommendations": true,
+    "top_n_segments": 3
+  },
+  "logging": {
+    "log_file": "data/system_log.jsonl",
+    "log_level": "INFO"
+  }
+}

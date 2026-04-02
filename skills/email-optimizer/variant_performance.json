@@ -1,0 +1,97 @@
+{
+  "last_updated": null,
+  "evaluation_cycle": 0,
+  "variants": {
+    "A": {
+      "status": "active",
+      "deployed_date": null,
+      "total_sent": 0,
+      "total_replies": 0,
+      "reply_rate_pct": 0.0,
+      "by_vertical": {},
+      "by_geo": {},
+      "by_hour": {},
+      "by_subject_pattern": {},
+      "follow_up_reply_rates": {
+        "follow_up_1": {"sent": 0, "replies": 0, "rate_pct": 0.0},
+        "follow_up_2": {"sent": 0, "replies": 0, "rate_pct": 0.0},
+        "follow_up_3": {"sent": 0, "replies": 0, "rate_pct": 0.0}
+      },
+      "retired": false,
+      "retired_date": null,
+      "retired_reason": null,
+      "replaced_by": null
+    },
+    "B": {
+      "status": "active",
+      "deployed_date": null,
+      "total_sent": 0,
+      "total_replies": 0,
+      "reply_rate_pct": 0.0,
+      "by_vertical": {},
+      "by_geo": {},
+      "by_hour": {},
+      "by_subject_pattern": {},
+      "follow_up_reply_rates": {
+        "follow_up_1": {"sent": 0, "replies": 0, "rate_pct": 0.0},
+        "follow_up_2": {"sent": 0, "replies": 0, "rate_pct": 0.0},
+        "follow_up_3": {"sent": 0, "replies": 0, "rate_pct": 0.0}
+      },
+      "retired": false,
+      "retired_date": null,
+      "retired_reason": null,
+      "replaced_by": null
+    },
+    "C": {
+      "status": "active",
+      "deployed_date": null,
+      "total_sent": 0,
+      "total_replies": 0,
+      "reply_rate_pct": 0.0,
+      "by_vertical": {},
+      "by_geo": {},
+      "by_hour": {},
+      "by_subject_pattern": {},
+      "follow_up_reply_rates": {
+        "follow_up_1": {"sent": 0, "replies": 0, "rate_pct": 0.0},
+        "follow_up_2": {"sent": 0, "replies": 0, "rate_pct": 0.0},
+        "follow_up_3": {"sent": 0, "replies": 0, "rate_pct": 0.0}
+      },
+      "retired": false,
+      "retired_date": null,
+      "retired_reason": null,
+      "replaced_by": null
+    }
+  },
+  "send_time_distribution": {
+    "current_peak_window": null,
+    "peak_weight_pct": 60,
+    "hourly_stats": {},
+    "last_optimized": null
+  },
+  "follow_up_config": {
+    "current_intervals_days": [3, 4, 5],
+    "follow_up_4_enabled": false,
+    "follow_up_4_interval_days": null,
+    "last_optimized": null
+  },
+  "subject_pattern_stats": {
+    "question": {"sent": 0, "replies": 0, "rate_pct": 0.0, "weight": 1.0},
+    "statement": {"sent": 0, "replies": 0, "rate_pct": 0.0, "weight": 1.0},
+    "name_personalization": {"sent": 0, "replies": 0, "rate_pct": 0.0, "weight": 1.0},
+    "city_personalization": {"sent": 0, "replies": 0, "rate_pct": 0.0, "weight": 1.0},
+    "number_inclusion": {"sent": 0, "replies": 0, "rate_pct": 0.0, "weight": 1.0}
+  },
+  "vertical_variant_matrix": {},
+  "geo_performance": {
+    "by_state": {},
+    "by_city": {},
+    "geo_weights": {},
+    "last_rebalanced": null
+  },
+  "claude_spend_this_week": {
+    "week_start": null,
+    "total_usd": 0.0,
+    "calls": 0
+  }
+}

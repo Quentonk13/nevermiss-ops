@@ -1,0 +1,133 @@
+{
+  "version": 1,
+  "skills": {
+    "invoice-tracker-pro": {
+      "version": "1.0.0",
+      "installedAt": 1775092400228
+    },
+    "calendar": {
+      "version": "1.0.0",
+      "installedAt": 1775092441408
+    },
+    "affiliate-master": {
+      "version": "1.0.0",
+      "installedAt": 1775092445407
+    },
+    "landing-page-roast": {
+      "version": "1.0.1",
+      "installedAt": 1775092448933
+    },
+    "web-deploy-github": {
+      "version": "1.0.0",
+      "installedAt": 1775092458107
+    },
+    "clawver-digital-products": {
+      "version": "1.0.2",
+      "installedAt": 1775092462003
+    },
+    "cold-outreach": {
+      "version": "2.0.0",
+      "installedAt": 1775092465006
+    },
+    "reef-copywriting": {
+      "version": "1.0.0",
+      "installedAt": 1775092468474
+    },
+    "closing-deals": {
+      "version": "0.1.0",
+      "installedAt": 1775092471972
+    },
+    "report-generator": {
+      "version": "1.0.2",
+      "installedAt": 1775092482602
+    },
+    "customer-retention": {
+      "version": "0.1.0",
+      "installedAt": 1775092507062
+    },
+    "vercel": {
+      "version": "1.0.1",
+      "installedAt": 1775092511742
+    },
+    "lead-magnets": {
+      "version": "1.0.0",
+      "installedAt": 1775092523857
+    },
+    "foxreach": {
+      "version": "0.1.1",
+      "installedAt": 1775092538881
+    },
+    "capability-evolver": {
+      "version": "1.40.2",
+      "installedAt": 1775092546968
+    },
+    "supabase": {
+      "version": "1.0.0",
+      "installedAt": 1775092681684
+    },
+    "twilio": {
+      "version": "1.0.1",
+      "installedAt": 1775092686201
+    },
+    "seo-optimizer": {
+      "version": "0.1.0",
+      "installedAt": 1775092692659
+    },
+    "stripe": {
+      "version": "2.9.2",
+      "installedAt": 1775092706253
+    },
+    "seo-competitor-analysis": {
+      "version": "1.0.0",
+      "installedAt": 1775092709346
+    },
+    "viral-video-studio": {
+      "version": "1.0.0",
+      "installedAt": 1775092743120
+    },
+    "saas-marketing-playbook": {
+      "version": "1.0.0",
+      "installedAt": 1775092751814
+    },
+    "saas-orchestrator": {
+      "version": "1.0.0",
+      "installedAt": 1775092759746
+    },
+    "revenue-monitor": {
+      "version": "1.0.0",
+      "installedAt": 1775092762756
+    },
+    "review-analysis": {
+      "version": "1.0.1",
+      "installedAt": 1775092766239
+    },
+    "saas-pricing-strategy": {
+      "version": "1.0.0",
+      "installedAt": 1775092769953
+    },
+    "ai-seo-writer": {
+      "version": "1.0.0",
+      "installedAt": 1775092773691
+    },
+    "frontend-design-3": {
+      "version": "0.1.0",
+      "installedAt": 1775092800966
+    },
+    "ab-test-architect": {
+      "version": "1.0.0",
+      "installedAt": 1775092804583
+    },
+    "email-marketing": {
+      "version": "1.0.0",
+      "installedAt": 1775092807406
+    },
+    "openclaw-agent-team-orchestration": {
+      "version": "3.0.0",
+      "installedAt": 1775156407230
+    },
+    "paperclip": {
+      "version": "1.0.0",
+      "installedAt": 1775156416134
+    }
+  }
+}

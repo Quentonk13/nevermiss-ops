@@ -1,0 +1,98 @@
+{
+  "competitor": "Numa",
+  "last_updated": null,
+  "overview": "Numa provides AI-powered phone answering, originally built for restaurants and adapted for other local businesses including home services. Their core weakness is that phone answering (not text-back) is their primary modality, and their home services expertise is secondary to their restaurant roots.",
+  "weaknesses": [
+    {
+      "id": "nm_w1",
+      "category": "focus",
+      "weakness": "Built for restaurants, adapted for home services as secondary market",
+      "severity": "critical",
+      "exploitable": true,
+      "talk_track": "Numa was built to handle restaurant calls -- orders, reservations, hours. They pivoted to home services, but the DNA is different. When a homeowner texts about a gas leak at midnight, you need AI built for home services emergencies, not adapted from pizza ordering.",
+      "evidence": "Company history, early product positioning, restaurant-focused case studies still prominent"
+    },
+    {
+      "id": "nm_w2",
+      "category": "technology",
+      "weakness": "Phone-focused, not text-back native",
+      "severity": "high",
+      "exploitable": true,
+      "talk_track": "Numa's strength is AI phone answering. But here's the problem: homeowners increasingly prefer text. Missed call text-back is what converts leads in 2024. Numa's text features are secondary to their phone product. NeverMiss was built text-first.",
+      "evidence": "Product positioning centers on phone/voice AI; text features listed as additional capabilities"
+    },
+    {
+      "id": "nm_w3",
+      "category": "pricing",
+      "weakness": "Opaque per-location pricing",
+      "severity": "medium",
+      "exploitable": true,
+      "talk_track": "Numa charges per location and requires a demo to get pricing. If you have two locations, you're paying double. NeverMiss is $297 flat -- covers your business, period.",
+      "evidence": "No public pricing; user reports of per-location billing"
+    },
+    {
+      "id": "nm_w4",
+      "category": "quality",
+      "weakness": "AI phone conversations feel stilted and robotic",
+      "severity": "high",
+      "exploitable": true,
+      "talk_track": "AI voice conversations are hard to get right -- there are pauses, misunderstandings, and the uncanny valley effect. Your customer calls about a flooding basement and gets a robot voice asking them to repeat themselves. NeverMiss skips that entirely with instant text-back that reads naturally.",
+      "evidence": "User reviews mention robotic voice quality; AI phone tech still has latency and comprehension issues"
+    },
+    {
+      "id": "nm_w5",
+      "category": "depth",
+      "weakness": "Cannot learn deep business-specific details",
+      "severity": "medium",
+      "exploitable": true,
+      "talk_track": "Numa handles basic routing and FAQs. But when a customer asks if you service a specific neighborhood, or whether you work on Carrier vs Trane systems, or what your weekend emergency rates are -- Numa falls short. NeverMiss learns all of that.",
+      "evidence": "Demo limitations show generic response patterns for detailed questions"
+    }
+  ],
+  "our_advantages": [
+    {
+      "advantage": "Purpose-built for home services from day one",
+      "against_weakness": "nm_w1",
+      "proof_point": "Every feature designed around home services lead conversion, not restaurant orders"
+    },
+    {
+      "advantage": "Text-back native architecture",
+      "against_weakness": "nm_w2",
+      "proof_point": "Under 60 second text response vs AI phone conversation with latency issues"
+    },
+    {
+      "advantage": "Transparent flat pricing",
+      "against_weakness": "nm_w3",
+      "proof_point": "$297/mo regardless of locations or volume"
+    },
+    {
+      "advantage": "Text avoids uncanny valley of AI voice",
+      "against_weakness": "nm_w4",
+      "proof_point": "Text responses read naturally; no awkward AI voice pauses"
+    },
+    {
+      "advantage": "Deep business-specific learning",
+      "against_weakness": "nm_w5",
+      "proof_point": "Learns specific services, service areas, brands serviced, pricing tiers"
+    }
+  ],
+  "talk_tracks": {
+    "when_lead_mentions_numa": "Numa does AI phone answering well. But the shift in home services is toward text-back. 78% of homeowners prefer getting a text within a minute over talking to an AI on the phone. NeverMiss was built for text-back specifically, and at $297 flat, there's no per-location pricing.",
+    "when_lead_is_comparing_prices": "Numa's pricing isn't public, and it's per-location. If you're running even 2 trucks out of different areas, you might be paying double. NeverMiss is $297 total, flat, month-to-month.",
+    "when_lead_values_phone_answering": "Phone answering is important, and Numa handles it. But consider: the fastest growing channel for lead conversion is text-back after missed calls. When someone calls and you miss it, a text back in 60 seconds converts 3x better than a voicemail callback. NeverMiss focuses on that exact moment.",
+    "when_lead_is_current_numa_customer": "How is Numa handling your text follow-ups? That's where most of the lead conversion actually happens. A lot of Numa users add NeverMiss to handle the text-back side since Numa is phone-focused. They complement each other, or you can compare conversion rates."
+  },
+  "deploy_when": [
+    "Lead explicitly mentions Numa",
+    "Lead mentions 'AI phone answering' or 'AI receptionist'",
+    "Lead mentions restaurant-focused tools being used for home services",
+    "Lead asks about voice AI vs text AI",
+    "CRM notes indicate current Numa customer",
+    "Lead has multiple locations (per-location pricing sensitivity)"
+  ],
+  "counter_objections": {
+    "numa_answers_actual_phone_calls": "It does, and that has value. But the data shows text-back converts more leads than AI phone answering. Both is ideal, but if you pick one, pick the one homeowners prefer: fast text response.",
+    "numa_is_ai_too": "Both are AI, but built for different things. Numa's AI is optimized for phone conversations. NeverMiss AI is optimized for text-based lead conversion in home services. Different tools for different jobs.",
+    "i_want_phones_answered_not_texts": "Makes sense. Numa or Smith.ai can handle phones. But layer NeverMiss on top: every missed call gets an instant text-back. You'll be surprised how many leads you recover that even a good phone service misses."
+  }
+}

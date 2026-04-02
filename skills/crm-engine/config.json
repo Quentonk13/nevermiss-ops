@@ -1,0 +1,56 @@
+{
+  "skill_name": "crm-engine",
+  "version": "1.0.0",
+  "trigger": {
+    "type": "event+cron",
+    "cron": "0 23 * * *",
+    "timezone": "America/Los_Angeles"
+  },
+  "data_path": "data/crm.json",
+  "suppression_path": "data/suppression_list.json",
+  "stale_lead_threshold_days": 14,
+  "fuzzy_match_threshold": 3,
+  "pipeline_stages": [
+    "new",
+    "contacted",
+    "replied",
+    "qualified",
+    "booked",
+    "demo_completed",
+    "closed",
+    "onboarding",
+    "lost",
+    "objection_handled",
+    "stalled"
+  ],
+  "valid_transitions": {
+    "new": ["contacted", "lost"],
+    "contacted": ["replied", "lost", "stalled"],
+    "replied": ["qualified", "lost", "objection_handled", "stalled"],
+    "qualified": ["booked", "lost", "stalled"],
+    "booked": ["demo_completed", "lost", "stalled"],
+    "demo_completed": ["closed", "lost", "stalled"],
+    "closed": ["onboarding"],
+    "onboarding": [],
+    "lost": [],
+    "objection_handled": ["replied", "lost"],
+    "stalled": ["contacted", "replied", "lost"]
+  },
+  "competitor_domains_suppressed": [
+    "servicetitan.com",
+    "housecallpro.com",
+    "jobber.com",
+    "podium.com",
+    "smith.ai",
+    "ruby.com",
+    "numa.com",
+    "hatch.co"
+  ],
+  "suppressed_role_prefixes": [
+    "info@",
+    "admin@",
+    "noreply@",
+    "sales@",
+    "support@"
+  ]
+}

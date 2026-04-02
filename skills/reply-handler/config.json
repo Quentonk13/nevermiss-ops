@@ -1,0 +1,85 @@
+{
+  "skill_name": "reply-handler",
+  "version": "1.0.0",
+  "enabled": true,
+  "trigger": {
+    "type": "cron",
+    "cron": "*/15 7-21 * * *",
+    "timezone": "America/Los_Angeles"
+  },
+  "polling": {
+    "instantly_api_base": "https://api.instantly.ai/api/v1",
+    "api_key_env": "INSTANTLY_API_KEY",
+    "poll_interval_minutes": 15,
+    "window_start_hour": 7,
+    "window_end_hour": 21
+  },
+  "classification": {
+    "provider": "groq",
+    "model": "llama-3.1-70b-versatile",
+    "api_key_env": "GROQ_API_KEY",
+    "temperature": 0.0,
+    "timeout_seconds": 15,
+    "max_retries": 2,
+    "categories": [
+      "INTERESTED",
+      "NOT_INTERESTED",
+      "QUESTION",
+      "OBJECTION_PRICE",
+      "OBJECTION_TIMING",
+      "OBJECTION_TRUST",
+      "OBJECTION_NEED",
+      "OUT_OF_OFFICE",
+      "BOUNCE",
+      "SPAM"
+    ]
+  },
+  "question_responder": {
+    "provider": "groq",
+    "model": "llama-3.1-70b-versatile",
+    "api_key_env": "GROQ_API_KEY",
+    "temperature": 0.3,
+    "timeout_seconds": 15,
+    "max_sentences": 3
+  },
+  "closer": {
+    "provider": "anthropic",
+    "model": "claude-sonnet-4-20250514",
+    "api_key_env": "ANTHROPIC_API_KEY",
+    "temperature": 0.4,
+    "timeout_seconds": 30,
+    "max_tokens": 350,
+    "daily_budget_cap_usd": 50
+  },
+  "multi_turn": {
+    "max_turns_before_escalation": 5,
+    "context_window_messages": 20
+  },
+  "routing": {
+    "ooo_retry_days": 7,
+    "interested_max_sentences": 4,
+    "objection_max_sentences": 3,
+    "question_max_sentences": 3
+  },
+  "notifications": {
+    "owner_email_env": "OWNER_EMAIL",
+    "notify_on": [
+      "INTERESTED",
+      "OBJECTION_PRICE",
+      "OBJECTION_TIMING",
+      "OBJECTION_TRUST",
+      "OBJECTION_NEED"
+    ],
+    "immediate_notify": ["INTERESTED"]
+  },
+  "cost_tracking": {
+    "claude_input_per_mtok": 3.00,
+    "claude_output_per_mtok": 15.00,
+    "groq_input_per_mtok": 0.59,
+    "groq_output_per_mtok": 0.79
+  },
+  "logging": {
+    "log_file": "data/system_log.jsonl",
+    "log_level": "INFO"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "skill_name": "sales-closer",
+  "version": "1.0.0",
+  "enabled": true,
+  "trigger": {
+    "type": "event+cron",
+    "event": "status_changed_to_booked",
+    "cron": "0 9 * * *",
+    "timezone": "America/Los_Angeles"
+  },
+  "pre_demo": {
+    "brief_send_minutes_before": 30,
+    "llm": {
+      "provider": "groq",
+      "model": "llama-3.1-70b-versatile",
+      "api_key_env": "GROQ_API_KEY",
+      "timeout_seconds": 15,
+      "max_retries": 2,
+      "temperature": 0.4,
+      "max_tokens": 300
+    },
+    "brief_max_words": 150
+  },
+  "post_demo": {
+    "followup_delay_hours": 24,
+    "nudge_delay_days": 3,
+    "stall_after_nudge": true,
+    "llm": {
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-20250514",
+      "api_key_env": "ANTHROPIC_API_KEY",
+      "timeout_seconds": 30,
+      "max_retries": 2,
+      "temperature": 0.5,
+      "max_tokens": 500
+    },
+    "max_sentences": 5,
+    "signup_link": "https://nevermiss.ai/signup",
+    "founding_member_price": "$297/month",
+    "founding_member_limit": 50,
+    "founding_member_urgency": "$297/month locked in, limited to first 50 founding members"
+  },
+  "qa_guard": {
+    "mode": "relaxed",
+    "allow_links": true,
+    "allow_product_name": true,
+    "allow_prices": true,
+    "max_sentences_override": 5
+  },
+  "owner_notification": {
+    "channel": "openclaw_message"
+  },
+  "pricing": {
+    "mrr_per_close": 297
+  },
+  "logging": {
+    "log_file": "data/system_log.jsonl",
+    "log_level": "INFO"
+  }
+}

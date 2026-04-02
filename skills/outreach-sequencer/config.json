@@ -1,0 +1,76 @@
+{
+  "skill_name": "outreach-sequencer",
+  "version": "1.0.0",
+  "trigger": {
+    "type": "cron",
+    "cron": "*/30 7-16 * * *",
+    "timezone": "America/Los_Angeles"
+  },
+  "llm": {
+    "provider": "groq",
+    "model": "llama-3.1-70b-versatile",
+    "api_key_env": "GROQ_API_KEY",
+    "timeout_seconds": 30,
+    "max_retries": 2,
+    "temperature": 0.8
+  },
+  "instantly": {
+    "api_key_env": "INSTANTLY_API_KEY",
+    "base_url": "https://api.instantly.ai/api/v1",
+    "timeout_seconds": 30
+  },
+  "warmup_schedule": {
+    "week_1": 5,
+    "week_2": 10,
+    "week_3": 20,
+    "week_4": 35,
+    "week_5_plus": 50
+  },
+  "send_window": {
+    "start_hour": 8,
+    "end_hour": 17,
+    "use_recipient_timezone": true
+  },
+  "variant_rotation": {
+    "variants": ["A", "B", "C"],
+    "strategy": "even_rotation",
+    "track_per_lead": true
+  },
+  "follow_up_sequence": {
+    "follow_up_1_days": 3,
+    "follow_up_2_days": 4,
+    "follow_up_3_days": 5,
+    "stop_on_reply": true,
+    "stop_on_bounce": true
+  },
+  "inbox_health": {
+    "bounce_warning_threshold_pct": 3.0,
+    "bounce_pause_threshold_pct": 5.0,
+    "pause_on_exceed": true,
+    "notify_owner_on_pause": true
+  },
+  "qa_gate": {
+    "enabled": true,
+    "max_regeneration_attempts": 2,
+    "skip_on_failure": true
+  },
+  "verticals": {
+    "hvac": {"missed_call_cost_low": 800, "missed_call_cost_high": 3000},
+    "plumbing": {"missed_call_cost_low": 500, "missed_call_cost_high": 2500},
+    "electrical": {"missed_call_cost_low": 600, "missed_call_cost_high": 2000},
+    "roofing": {"missed_call_cost_low": 2000, "missed_call_cost_high": 8000},
+    "general_contractor": {"missed_call_cost_low": 1500, "missed_call_cost_high": 5000},
+    "landscaping": {"missed_call_cost_low": 300, "missed_call_cost_high": 1200},
+    "pest_control": {"missed_call_cost_low": 200, "missed_call_cost_high": 600}
+  },
+  "data_paths": {
+    "warmup_tracker": "data/inbox_warmup_tracker.json",
+    "send_log": "data/outreach_send_log.json",
+    "daily_report": "data/outreach_daily_report.json",
+    "system_log": "data/system_log.jsonl"
+  },
+  "logging": {
+    "log_file": "data/system_log.jsonl",
+    "log_level": "INFO"
+  }
+}

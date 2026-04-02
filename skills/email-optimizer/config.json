@@ -1,0 +1,87 @@
+{
+  "skill_name": "email-optimizer",
+  "version": "1.0.0",
+  "trigger": {
+    "type": "cron",
+    "cron": "0 5 * * 1",
+    "timezone": "America/Los_Angeles",
+    "emergency_trigger": {
+      "event": "bounce_rate_exceeded",
+      "threshold_pct": 3.0
+    }
+  },
+  "llm": {
+    "bulk": {
+      "provider": "groq",
+      "model": "llama-3.1-70b-versatile",
+      "api_key_env": "GROQ_API_KEY",
+      "timeout_seconds": 30,
+      "max_retries": 2,
+      "temperature": 0.8
+    },
+    "closer": {
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-20250514",
+      "api_key_env": "ANTHROPIC_API_KEY",
+      "timeout_seconds": 60,
+      "max_retries": 1,
+      "temperature": 0.4,
+      "weekly_budget_cap_usd": 5.0,
+      "reply_rate_trigger_pct": 5.0
+    }
+  },
+  "variant_replacement": {
+    "min_emails_for_evaluation": 200,
+    "underperformance_ratio": 0.5,
+    "significance_level": 0.05,
+    "replacements_to_generate": 2,
+    "qa_validation_required": true
+  },
+  "send_time_optimization": {
+    "min_emails_for_evaluation": 500,
+    "peak_window_hours": 3,
+    "peak_window_weight_pct": 60,
+    "distributed_weight_pct": 40
+  },
+  "follow_up_timing": {
+    "default_intervals_days": [3, 4, 5],
+    "min_interval_days": 2,
+    "max_interval_days": 7,
+    "breakup_reply_rate_threshold_pct": 2.0,
+    "max_follow_ups": 4
+  },
+  "subject_line_evolution": {
+    "min_emails_for_evaluation": 300,
+    "patterns": ["question", "statement", "name_personalization", "city_personalization", "number_inclusion"],
+    "reject_loser_threshold_ratio": 0.3,
+    "weight_winner_boost": 1.5
+  },
+  "vertical_variant_matching": {
+    "min_emails_per_cell": 100,
+    "min_difference_ratio": 2.0,
+    "enabled": true
+  },
+  "geo_reallocation": {
+    "rebalance_interval_days": 14,
+    "min_emails_per_geo": 50,
+    "max_weight_multiplier": 2.0,
+    "min_weight_multiplier": 0.3,
+    "never_reduce_total_volume": true
+  },
+  "guardrails": {
+    "exploration_pct": 20,
+    "never_reduce_daily_volume": true,
+    "never_change_warmup_limits": true,
+    "qa_gate_required": true
+  },
+  "data_paths": {
+    "send_log": "data/outreach_send_log.json",
+    "optimization_log": "data/optimization/email_optimization_log.jsonl",
+    "variant_history": "data/optimization/variant_history.json",
+    "system_log": "data/system_log.jsonl"
+  },
+  "logging": {
+    "log_file": "data/system_log.jsonl",
+    "log_level": "INFO"
+  }
+}
