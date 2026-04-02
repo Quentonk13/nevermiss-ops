@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NeverMiss Ops</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #0f0f0f;
+      color: #fff;
+      min-height: 100vh;
+    }
+    .header {
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+      padding: 20px;
+      border-bottom: 1px solid #333;
+    }
+    .header h1 { font-size: 1.5rem; color: #00d4ff; }
+    .header p { color: #888; font-size: 0.9rem; margin-top: 5px; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+    .section { margin-bottom: 30px; }
+    .section h2 {
+      font-size: 1rem;
+      color: #666;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 15px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 15px;
+    }
+    .app {
+      background: #1a1a1a;
+      border: 1px solid #333;
+      border-radius: 12px;
+      padding: 20px;
+      cursor: pointer;
+      transition: all 0.2s;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+    .app:hover {
+      background: #252525;
+      border-color: #00d4ff;
+      transform: translateY(-2px);
+    }
+    .app-icon {
+      width: 40px;
+      height: 40px;
+      background: #00d4ff20;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+    .app-name { font-weight: 600; margin-bottom: 5px; }
+    .app-desc { font-size: 0.8rem; color: #666; }
+    .status { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 8px; }
+    .status.online { background: #00ff88; }
+    .status.offline { background: #ff4444; }
+    .status.setup { background: #ffaa00; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>🚀 NeverMiss Ops</h1>
+    <p>Quenton Kersey | USMC</p>
+  </div>
+  
+  <div class="container">
+    <div class="section">
+      <h2>⚡ Revenue Engines</h2>
+      <div class="grid">
+        <a href="/skills/ai-sdr" class="app">
+          <div class="app-icon">📧</div>
+          <div class="app-name">AI SDR</div>
+          <div class="app-desc">Lead outreach & emails</div>
+        </a>
+        <a href="/skills/machina-portfolio" class="app">
+          <div class="app-icon">🏢</div>
+          <div class="app-name">Machina</div>
+          <div class="app-desc">Multi-vertical manager</div>
+        </a>
+        <a href="/skills/felix-craft" class="app">
+          <div class="app-icon">💡</div>
+          <div class="app-name">Felix Craft</div>
+          <div class="app-desc">Build digital products</div>
+        </a>
+        <a href="/skills/social-content" class="app">
+          <div class="app-icon">📱</div>
+          <div class="app-name">Social Content</div>
+          <div class="app-desc">Post to Twitter/Bluesky</div>
+        </a>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>🛠️ Tools & Automation</h2>
+      <div class="grid">
+        <a href="/skills/revenue-engine" class="app">
+          <div class="app-icon">📊</div>
+          <div class="app-name">Revenue Engine</div>
+          <div class="app-desc">Full revenue cycle</div>
+        </a>
+        <a href="/skills/crm-engine" class="app">
+          <div class="app-icon">🗃️</div>
+          <div class="app-name">CRM</div>
+          <div class="app-desc">Lead management</div>
+        </a>
+        <a href="/skills/autonomous/scheduler.py" class="app">
+          <div class="app-icon">⏰</div>
+          <div class="app-name">Scheduler</div>
+          <div class="app-desc">Heartbeat automation</div>
+        </a>
+        <a href="/skills/stripe" class="app">
+          <div class="app-icon">💳</div>
+          <div class="app-name">Stripe</div>
+          <div class="app-desc">Payments</div>
+        </a>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>🌐 External Services</h2>
+      <div class="grid">
+        <a href="https://github.com/Quentonk13/nevermiss-ops" target="_blank" class="app">
+          <div class="app-icon">🐙</div>
+          <div class="app-name">GitHub</div>
+          <div class="app-desc">Source code</div>
+        </a>
+        <a href="https://railway.com" target="_blank" class="app">
+          <div class="app-icon">🚂</div>
+          <div class="app-name">Railway</div>
+          <div class="app-desc">Deployment</div>
+        </a>
+        <a href="/n8n" class="app">
+          <div class="app-icon">🔗</div>
+          <div class="app-name">n8n</div>
+          <div class="app-desc"><span class="status setup"></span>Setup pending</div>
+        </a>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>📁 All Skills</h2>
+      <div class="grid" id="skills-grid"></div>
+    </div>
+  </div>
+
+  <script>
+    const skills = [
+      { name: 'AI SDR', desc: 'Email outreach', icon: '📧', path: '/skills/ai-sdr' },
+      { name: 'Machina', desc: 'Multi-business', icon: '🏢', path: '/skills/machina-portfolio' },
+      { name: 'Felix Craft', desc: 'Product builder', icon: '💡', path: '/skills/felix-craft' },
+      { name: 'Social', desc: 'Content engine', icon: '📱', path: '/skills/social-content' },
+      { name: 'CRM', desc: 'Lead tracking', icon: '🗃️', path: '/skills/crm-engine' },
+      { name: 'Stripe', desc: 'Payments', icon: '💳', path: '/skills/stripe' },
+      { name: 'n8n', desc: 'Automation', icon: '🔗', path: '/n8n' },
+      { name: 'Lead Pipeline', desc: 'Source leads', icon: '🎯', path: '/skills/lead-pipeline' },
+      { name: 'Cold Outreach', desc: 'Sequences', icon: '❄️', path: '/skills/cold-outreach' },
+      { name: 'SEO Writer', desc: 'Content', icon: '🔍', path: '/skills/ai-seo-writer' },
+    ];
+    
+    const grid = document.getElementById('skills-grid');
+    skills.forEach(s => {
+      grid.innerHTML += `
+        <a href="${s.path}" class="app">
+          <div class="app-icon">${s.icon}</div>
+          <div class="app-name">${s.name}</div>
+          <div class="app-desc">${s.desc}</div>
+        </a>
+      `;
+    });
+  </script>
+</body>
+</html>
